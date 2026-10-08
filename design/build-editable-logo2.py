@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Bouwt het bewerkbare logo-bestand (PPTX) voor Canva en PowerPoint.
 
-Waarom PPTX: Canva kan tekst in een geüpload SVG of PNG niet bewerken — zo'n bestand komt
+Waarom PPTX: Canva kan tekst in een geüpload SVG of PNG niet bewerken, zo'n bestand komt
 binnen als plaatje. Een PPTX wordt bij import omgezet naar een ontwerp waarin de tekstvakken
 echte, aanpasbare tekst blijven. Het merkteken gaat mee als afbeelding (dat hoort vast te blijven).
 """
@@ -55,7 +55,7 @@ prs = Presentation()
 prs.slide_width, prs.slide_height = IN(1584), IN(396)
 W = lambda px=56, tr=-1.4: [("Ermstrang ", "Archivo", px, True, tr), ("Technologies", "Archivo", px, False, tr)]
 
-# 1 — LinkedIn-omslag (op navy)
+# 1: LinkedIn-omslag (op navy)
 s = blank(prs, NAVY)
 s.shapes.add_picture(os.path.join(A,"mark-navy-512.png"), IN(64), IN(148), height=IN(100))
 textbox(s, 200, 146, 620, 50, [W()], PAPER)
@@ -64,27 +64,27 @@ textbox(s, 800, 128, 748, 110, [[("Automatiseer het gedoe.", "Archivo", 46, True
 textbox(s, 800, 240, 748, 26, [[("AI-assistenten op maat voor zzp en mkb · ermstrangtechnologies.nl",
                                 "Source Sans 3", 19, False, 0)]], DIM)
 
-# 2 — liggend lockup op papier + uitleg dat de tekst aanpasbaar is
+# 2: liggend lockup op papier + uitleg dat de tekst aanpasbaar is
 s = blank(prs, PAPER)
 s.shapes.add_picture(os.path.join(A,"mark-paper-512.png"), IN(64), IN(148), height=IN(100))
 textbox(s, 200, 146, 620, 50, [W()], NAVY)
 textbox(s, 800, 140, 748, 120, [[("Pas de naam of de ondertitel aan in het tekstvak.", "Archivo", 28, True, -0.8)],
                                 [("Het merkteken links is een afbeelding en blijft zoals het is.", "Source Sans 3", 19, False, 0)]], NAVY)
 
-# 3 — staand lockup (op navy)
+# 3: staand lockup (op navy)
 s = blank(prs, NAVY)
 s.shapes.add_picture(os.path.join(A,"mark-navy-512.png"), IN(762), IN(48), height=IN(150))
 textbox(s, 0, 222, 1584, 56, [W(px=58)], PAPER, PP_ALIGN.CENTER)
 textbox(s, 0, 292, 1584, 24, [[("AI-assistenten op maat voor zzp en mkb", "Source Sans 3", 19, False, 1.2)]], CYAN, PP_ALIGN.CENTER)
 
-# 4 — hoe je dit bestand gebruikt
+# 4: hoe je dit bestand gebruikt
 s = blank(prs, PAPER)
 textbox(s, 64, 60, 1450, 60, [[("Zo werkt het", "Archivo", 44, True, -1.2)]], NAVY)
 textbox(s, 64, 140, 1450, 200, [
     [("In Canva: Bestand → Importeren. Canva zet de tekstvakken om naar echte Canva-tekst.", "Source Sans 3", 21, False, 0)],
     [("Lettertype Archivo staat in Canva bij de fonts (zoek op Archivo); Source Sans 3 ook.", "Source Sans 3", 21, False, 0)],
     [("In PowerPoint: dubbelklik op een tekstvak en typ. Het merkteken is een los plaatje.", "Source Sans 3", 21, False, 0)],
-    [("In Inkscape/Figma/Illustrator: gebruik de SVG's in assets/img — daar is de tekst ook echt tekst.", "Source Sans 3", 21, False, 0)],
+    [("In Inkscape/Figma/Illustrator: gebruik de SVG's in assets/img, daar is de tekst ook echt tekst.", "Source Sans 3", 21, False, 0)],
     [("Niet doen: het merkteken vervormen, van kleur veranderen of de puntjes los herschikken.", "Source Sans 3", 21, False, 0)],
 ], NAVY)
 

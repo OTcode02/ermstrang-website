@@ -1,4 +1,4 @@
-/* Ermstrang — beweging en kleine verbeteringen.
+/* Ermstrang: beweging en kleine verbeteringen.
    Twee scroll-families (COMMIT-SHEET §5): (1) de stappen in het werkblad worden gestempeld,
    (2) drie verschillende sectie-openers (rijzen / lijn groeit / uit blur).
    Zonder JS staat alles er al: de startwaarde hangt aan de klasse .js op <html>, die alleen

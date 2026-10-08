@@ -1,9 +1,9 @@
-# DESIGN.md — Ermstrang Technologies
+# DESIGN.md: Ermstrang Technologies
 
 Vastgelegd systeem zoals het is gebouwd (register: build). Elke latere wijziging hoort binnen deze
 besluiten te blijven; wijkt iets af, dan is dat een bewuste breuk en geen drift.
 
-## Kleur — de tokens (assets/css/style.css, `:root`)
+## Kleur: de tokens (assets/css/style.css, `:root`)
 
 | token | OKLCH | sRGB | waar |
 |---|---|---|---|
@@ -30,8 +30,8 @@ licht/donker ongeveer gelijk: één navy band per schermhoogte, niet meer.
 
 ## Type
 
-- display: **Archivo** (600/700/800), zelf gehost — koppen, knoppen, labels, cijfers.
-- text: **Source Sans 3** (400/600), zelf gehost — lopende tekst.
+- display: **Archivo** (600/700/800), zelf gehost, voor koppen, knoppen, labels en cijfers.
+- text: **Source Sans 3** (400/600), zelf gehost, voor lopende tekst.
 - As: grotesk × humanist. Inter en Space Grotesk zijn bewust niet gebruikt.
 
 Schaal (clamp): `--step--1` … `--step-5`; h1 = `--step-5` (38 px mobiel → 73,6 px op 1440),
@@ -45,8 +45,7 @@ horen bij de technische tekenstijl van het werkblad en de tabel en zijn bewust g
 ## Merkteken
 
 Het merkteken is een **bol van puntjes** in de merktint `#1B4A78`, geplaatst met de gulden hoek
-(zonnebloemraster): 61 punten van 4,7 eenheden op een straal van 46 in een veld van 128. Eén puntje
-— rechtsboven — is cyaan. Semantiek: het netwerk doet het werk, één stap is die van de assistent.
+(zonnebloemraster): 61 punten van 4,7 eenheden op een straal van 46 in een veld van 128. Eén puntje, rechtsboven, is cyaan. Semantiek: het netwerk doet het werk, één stap is die van de assistent.
 `assets/img/mark-dots.svg` is de canon en is volledig vector (losse cirkels). Onder 32 px gebruik je
 `favicon-dots.svg`: 13 grotere punten, anders loopt het dicht bij 16 px.
 
@@ -58,22 +57,22 @@ lettertype. Het PPTX is de route voor Canva en PowerPoint: daar blijven de tekst
 
 ## Componenten
 
-- `.board` (het werkblad) — de signatuur. Witte kaart, 1px hairline, stappen als rijen met tijd in
+- `.board` (het werkblad), de signatuur. Witte kaart, 1px hairline, stappen als rijen met tijd in
   tabulaire cijfers. `margin-bottom:-7.5rem` laat hem over de sectiegrens lopen; de sectie eronder
   heeft `border-top` + extra `padding-top`, zodat de hairline achter het werkblad doorloopt.
-- `.tasks` — echte tabel (geen kaartjes). Op mobiel worden de kolommen rijen.
-- `.how` — drie stappen met een verbindingslijn die bij het scrollen van links naar rechts groeit.
-- `.who` — twee rijen, elk anders opgebouwd (lijst vs. definitielijst).
-- `.navy` — de enige gedrenkte band; korrel (SVG-turbulentie) op 3,5% via `::after`.
-- `.btn` / `.btn--ghost` — één gevulde en één omrande knop. Allebei echt zichtbaar als knop.
+- `.tasks`: echte tabel (geen kaartjes). Op mobiel worden de kolommen rijen.
+- `.how`: drie stappen met een verbindingslijn die bij het scrollen van links naar rechts groeit.
+- `.who`: twee rijen, elk anders opgebouwd (lijst vs. definitielijst).
+- `.navy`: de enige gedrenkte band; korrel (SVG-turbulentie) op 3,5% via `::after`.
+- `.btn` / `.btn--ghost`: één gevulde en één omrande knop. Allebei echt zichtbaar als knop.
 
 ## Beweging
 
 Twee families (budget was ≤3):
 
-1. **Werkblad stempelt** — de drie geautomatiseerde stappen krijgen één voor één hun cyaan vinkje,
+1. **Werkblad stempelt**: de drie geautomatiseerde stappen krijgen één voor één hun cyaan vinkje,
    stagger 60 ms, eenmalig (IntersectionObserver op `.board`, drempel 0,35).
-2. **Sectie-openers, drie verschillende expressies** — (a) tabelrijen rijzen 6 px met 45 ms stagger,
+2. **Sectie-openers, drie verschillende expressies**: (a) tabelrijen rijzen 6 px met 45 ms stagger,
    (b) de verbindingslijn groeit `scaleX` 0→1 in 640 ms, (c) "voor wie" komt uit `filter:blur(6px)`
    zonder beweging. Geen vierde familie.
 

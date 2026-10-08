@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Ermstrang Technologies — stylesheet
+   Ermstrang Technologies, stylesheet
    Tokens zijn de goedgekeurde mockup-tokens (design/COMMIT-SHEET.md §2, §3).
    Palet in OKLCH, met de sRGB-waarde als comment voor drukwerk en Figma.
    ========================================================================== */
@@ -29,7 +29,7 @@
   --navy-700:   oklch(0.289 0.069 253);   /* #0E2C4C  hover op navy */
   --navy-500:   oklch(0.402 0.093 251);   /* #1B4A78  secundaire lijn */
   --cyan:       oklch(0.693 0.125 218);   /* #00AED0  accent: alleen waar de assistent werkt */
-  --cyan-ink:   oklch(0.516 0.093 219);   /* #00748C  5.0:1 op papier — tekst/accent op licht */
+  --cyan-ink:   oklch(0.516 0.093 219);   /* #00748C  5.0:1 op papier, tekst/accent op licht */
   --muted:      oklch(0.453 0.040 251);   /* #46586C  6.8:1 op papier */
   --hairline:   oklch(0.913 0.013 252);   /* #DCE3EB  1px structuur */
   --on-navy:    oklch(0.975 0.005 248);
@@ -58,7 +58,7 @@
   --ease-in-out-quart: cubic-bezier(.77, 0, .175, 1);
   --d-press: 140ms;   /* knop */
   --d-hover: 160ms;   /* hover */
-  --d-reveal: 520ms;  /* sectie-opener: marketingreeks, bewust >300ms — zie COMMIT-SHEET §5 */
+  --d-reveal: 520ms;  /* sectie-opener: marketingreeks, bewust >300ms, zie COMMIT-SHEET §5 */
 
   --z-sticky: 10;
   --z-grain: 2;
@@ -156,7 +156,7 @@ strong{font-weight:600}
 }
 .kicker::before{content:""; width:26px; height:2px; background:var(--cyan); flex:none}
 h1{font-size:var(--step-5); max-width:24ch}
-/* cyaan onderstreept precies het deel dat geautomatiseerd wordt — dezelfde betekenis als in het werkblad */
+/* cyaan onderstreept precies het deel dat geautomatiseerd wordt, dezelfde betekenis als in het werkblad */
 h1 mark{
   background:none; color:inherit;
   text-decoration:underline; text-decoration-color:var(--cyan);

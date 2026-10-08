@@ -1,4 +1,4 @@
-# Ermstrang Technologies — website
+# Ermstrang Technologies: website
 
 Statische site (een pagina + privacyverklaring). Geen build, geen dependencies: de map kan zo op
 GitHub Pages.
