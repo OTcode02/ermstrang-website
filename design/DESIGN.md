@@ -98,7 +98,10 @@ zichtbaar). `prefers-reduced-motion` zet alles meteen neer (gecontroleerd).
 
 - Het merkteken uit de eerste ronde (vierkant met drie balken) is vervangen. De oude bestanden staan
   nog in `~/Documents/Ermstrang*`; die horen niet meer gebruikt te worden.
-- Het LinkedIn-bannerformaat wordt op mobiel aan de zijkanten bijgesneden: het woordmerk links kan
-  wegvallen, de slogan in het midden blijft staan.
+- De LinkedIn-omslag houdt zijn inhoud expres binnen het midden: merkteken en naam beginnen op
+  420 px (de profielfoto komt tot ~393 px over de banner heen) en de hele compositie staat in de
+  middelste helft van de breedte. Op mobiel snijdt LinkedIn de zijkanten weg; gecontroleerd met een
+  midden-60%- en midden-50%-uitsnede (`design/shots/check-banner.png`). Gebruik die marge ook bij
+  een latere nieuwe omslag.
 - `privacy.html` is inhoudelijk geschreven maar nog niet juridisch nagekeken en mist de
   bedrijfsgegevens (staan als commentaar in de HTML en als TODO in README.md).

@@ -18,12 +18,13 @@
   #mark-paper{width:512px;height:512px;background:#F4F7FA}
 
   #banner{width:1584px;height:396px;background:oklch(0.247 0.065 255); color:#F4F7FA;
-          padding:0 64px; display:grid; grid-template-columns:auto 1fr; align-items:center; gap:52px}
-  #banner .lock{display:flex; align-items:center; gap:20px}
-  #banner .lock img{width:96px;height:96px}
-  #banner .word{font-weight:800; font-size:56px; letter-spacing:-1.4px; line-height:1; white-space:nowrap}
+          padding-left:420px; padding-right:64px; display:flex; align-items:center}
+  #banner .inner{display:grid; gap:18px}
+  #banner .row1{display:flex; align-items:center; gap:20px}
+  #banner .lock img{width:84px;height:84px;display:block}
+  #banner .word{font-weight:800; font-size:52px; letter-spacing:-1.3px; line-height:1; white-space:nowrap}
   #banner .word span{font-weight:400}
-  #banner .tag{font-weight:800; font-size:46px; line-height:1.16; letter-spacing:-1.3px; max-width:19ch}
+  #banner .tag{font-weight:800; font-size:40px; line-height:1.15; letter-spacing:-1.1px}
   #banner .tag u{text-decoration-color:#00AED0; text-decoration-thickness:.1em; text-underline-offset:.12em}
   #banner .meta{font-family:"Source Sans 3",sans-serif; font-size:19px; color:#CFD9E3; margin-top:16px}
 
@@ -61,15 +62,14 @@
 <div class="art"><p class="cap">mark-navy 512 · los merkteken op navy</p>
   <div class="sq" id="mark-navy"><img src="../assets/img/mark-dots-omgekeerd.svg" width="320" height="320" alt=""></div></div>
 
-<div class="art"><p class="cap">linkedin-banner 1584×396</p>
+<div class="art"><p class="cap">linkedin-banner 1584×396 · rechts van de profielfoto, midden in het mobiele bijsnijvlak</p>
   <div id="banner">
-    <div class="lock">
-      <img src="../assets/img/mark-dots-omgekeerd.svg" alt="">
-      <div class="word">Ermstrang <span>Technologies</span></div>
-    </div>
-    <div>
+    <div class="inner">
+      <div class="row1">
+        <span class="lock"><img src="../assets/img/mark-dots-omgekeerd.svg" alt=""></span>
+        <span class="word">Ermstrang <span>Technologies</span></span>
+      </div>
       <div class="tag">Automatiseer <u>het gedoe</u>. Focus op je vak.</div>
-      <div class="meta">AI-assistenten op maat voor zzp en mkb · ermstrang.nl</div>
     </div>
   </div></div>
 
