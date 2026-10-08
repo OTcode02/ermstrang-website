@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — hero — Ermstrang Technologies</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* TOKENS — deze worden na goedkeuring verbatim de projecttokens */
+  --paper:      oklch(0.975 0.005 248);   /* #F4F7FA veld */
+  --surface:    oklch(1 0 0);
+  --navy:       oklch(0.247 0.065 255);   /* #08213F inkt + band */
+  --navy-700:   oklch(0.289 0.069 253);
+  --navy-500:   oklch(0.402 0.093 251);
+  --cyan:       oklch(0.693 0.125 218);   /* #00AED0 semantisch accent */
+  --cyan-ink:   oklch(0.516 0.093 219);   /* #00748C tekst-op-papier 5.0:1 */
+  --muted:      oklch(0.453 0.040 251);   /* 6.8:1 */
+  --hairline:   oklch(0.913 0.013 252);
+  --display: "Archivo", system-ui, sans-serif;
+  --text: "Source Sans 3", system-ui, sans-serif;
+  --ease-out-quart: cubic-bezier(.23,1,.32,1);
+  --step-1: clamp(1.06rem,.98rem + .3vw,1.19rem);
+  --step-3: clamp(1.5rem,1.24rem + 1.1vw,2.1rem);
+  --step-5: clamp(2.3rem,1.5rem + 3.6vw,4.6rem);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--navy);
+  font-family:var(--text);font-size:var(--step-1);line-height:1.55;
+  font-synthesis-weight:none;
+}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.02;letter-spacing:-.035em;text-wrap:balance;margin:0}
+p{margin:0;text-wrap:pretty}
+.wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+
+/* header */
+.site-head{display:flex;align-items:center;gap:1.25rem;padding-block:1.35rem;border-bottom:1px solid var(--hairline)}
+.brand{display:flex;align-items:center;gap:.7rem;font-family:var(--display);font-weight:800;font-size:1.15rem;letter-spacing:-.02em;text-decoration:none;color:var(--navy)}
+.brand svg{width:34px;height:34px;display:block}
+.site-nav{margin-left:auto;display:flex;gap:1.5rem;font-size:.95rem}
+.site-nav a{color:var(--navy);text-decoration:none;padding-block:.35rem;border-bottom:1px solid transparent}
+.site-nav a:hover{border-bottom-color:var(--cyan)}
+.cta{display:inline-flex;align-items:center;gap:.5rem;background:var(--navy);color:var(--surface);
+  text-decoration:none;font-weight:600;padding:.7rem 1.1rem;border-radius:2px;
+  transition:background-color 140ms var(--ease-out-quart),transform 140ms var(--ease-out-quart)}
+.cta:hover{background:var(--navy-700)}
+.cta:active{transform:scale(.97)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--cyan-ink);outline-offset:3px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:7fr 5fr;gap:clamp(2rem,5vw,5rem);
+  padding-block:clamp(3rem,7vw,6rem) clamp(4rem,8vw,7rem);align-items:start}
+.kicker{display:flex;align-items:center;gap:.6rem;font-family:var(--display);font-weight:600;
+  font-size:.82rem;letter-spacing:.02em;color:var(--cyan-ink);margin-bottom:1.5rem}
+.kicker::before{content:"";width:26px;height:2px;background:var(--cyan);flex:none}
+h1{font-size:var(--step-5);max-width:22ch}
+h1 em{font-style:normal;font-weight:800}
+.lede{margin-top:1.5rem;max-width:56ch;color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:.9rem;align-items:center;margin-top:2rem}
+.ghost{color:var(--navy);text-decoration:none;font-weight:600;border-bottom:1px solid var(--navy-500);padding-bottom:2px}
+.ghost:hover{border-bottom-color:var(--cyan-ink);color:var(--cyan-ink)}
+.foot-note{margin-top:1.6rem;font-size:.9rem;color:var(--muted);max-width:46ch}
+
+/* het werkblad — de signatuur */
+.board{border:1px solid var(--hairline);background:var(--surface);padding:1.5rem 1.5rem 1.9rem}
+.board-head{display:flex;justify-content:space-between;align-items:baseline;
+  font-family:var(--display);font-weight:600;font-size:.78rem;letter-spacing:.04em;
+  color:var(--cyan-ink);padding-bottom:.9rem;border-bottom:1px solid var(--hairline)}
+.board-head span:last-child{color:var(--muted);font-variant-numeric:tabular-nums}
+ol.flow{list-style:none;margin:0;padding:0}
+.step{display:grid;grid-template-columns:3.4rem 1fr;gap:1rem;padding-block:.95rem;
+  border-bottom:1px solid var(--hairline);position:relative}
+.step:last-child{border-bottom:0}
+.step .t{font-variant-numeric:tabular-nums;font-size:.82rem;color:var(--muted);padding-top:.25rem}
+.step .what{font-size:.98rem;line-height:1.4}
+.step .who{display:block;font-family:var(--display);font-weight:600;font-size:.72rem;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:.3rem}
+.step--auto .what{color:var(--navy)}
+.step--auto .stamp{display:inline-flex;align-items:center;gap:.35rem;color:var(--cyan-ink);
+  font-family:var(--display);font-weight:700;font-size:.72rem;letter-spacing:.06em;
+  text-transform:uppercase;margin-top:.35rem}
+.step--auto .stamp::before{content:"";width:13px;height:13px;flex:none;
+  background:var(--cyan);clip-path:polygon(14% 52%,36% 74%,86% 18%,96% 30%,36% 94%,4% 62%)}
+.step--human{background:var(--paper);margin-inline:-.75rem;padding-inline:.75rem;border-radius:2px}
+.step--human .what{font-weight:600}
+.step--human .who{color:var(--cyan-ink)}
+.board-foot{margin-top:1.1rem;padding-top:.9rem;border-top:1px solid var(--hairline);
+  font-size:.88rem;color:var(--muted)}
+.board-foot strong{color:var(--navy);font-weight:600}
+
+/* sectie eronder: de tekening loopt over de grens heen (grid break) */
+.next{padding-block:clamp(3.5rem,7vw,6rem)}
+.next h2{font-size:var(--step-3);max-width:24ch}
+.next p{margin-top:1rem;max-width:60ch;color:var(--muted)}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;padding-bottom:2.5rem}
+  .site-nav{display:none}
+  .board{margin-top:.5rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="site-head">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 128 128" aria-hidden="true">
+        <rect width="128" height="128" rx="18" fill="#08213F"/>
+        <rect x="16" y="16" width="96" height="96" rx="3" fill="#F4F7FA"/>
+        <g fill="#08213F">
+          <path d="M28 30 H104 L92 46 H36 V54 H28 Z"/>
+          <path d="M28 98 H104 L92 82 H36 V74 H28 Z"/>
+        </g>
+        <rect x="30" y="58" width="58" height="12" fill="#00AED0"/>
+      </svg>
+      Ermstrang
+    </a>
+    <nav class="site-nav">
+      <a href="#wat">Wat we overnemen</a>
+      <a href="#hoe">Hoe het werkt</a>
+      <a href="#voor-wie">Voor wie</a>
+    </nav>
+    <a class="cta" href="#contact">Plan een kennismaking</a>
+  </header>
+
+  <section class="hero">
+    <div>
+      <p class="kicker">AI-automatisering voor zzp en mkb</p>
+      <h1>Automatiseer het gedoe. Focus op <em>je vak</em>.</h1>
+      <p class="lede">Wij bouwen één AI-assistent op maat die je terugkerende werk overneemt:
+        mail beantwoorden, gegevens overtypen, offertes opstellen, facturen opvolgen. Wat overblijft
+        is het werk waarvoor klanten jou bellen.</p>
+      <p class="actions">
+        <a class="cta" href="#contact">Plan een kennismaking</a>
+        <a class="ghost" href="#wat">Zie wat we overnemen</a>
+      </p>
+      <p class="foot-note">Eén assistent per klant, gebouwd op jouw werkwijze. Hij draait in jouw
+        eigen omgeving en wij begeleiden in het Nederlands.</p>
+    </div>
+
+    <div class="board">
+      <div class="board-head"><span>Werkstroom — nieuwe aanvraag</span><span>vandaag</span></div>
+      <ol class="flow">
+        <li class="step step--human">
+          <span class="t">08:12</span>
+          <span><span class="what">Een klant mailt: "kunnen jullie dit ook doen, en wat kost het?"</span>
+          <span class="who">komt binnen</span></span>
+        </li>
+        <li class="step step--auto">
+          <span class="t">08:12</span>
+          <span><span class="what">Assistent leest de vraag, haalt de gegevens van deze klant erbij en zet de korting klaar die je altijd geeft.</span>
+          <span class="stamp">gedaan</span></span>
+        </li>
+        <li class="step step--auto">
+          <span class="t">08:13</span>
+          <span><span class="what">Concept-offerte staat in je map, met dezelfde opmaak als je vorige tien.</span>
+          <span class="stamp">gedaan</span></span>
+        </li>
+        <li class="step step--auto">
+          <span class="t">08:13</span>
+          <span><span class="what">Herinnering staat gepland voor de dag dat de betaaltermijn afloopt.</span>
+          <span class="stamp">gedaan</span></span>
+        </li>
+        <li class="step step--human">
+          <span class="t">08:20</span>
+          <span><span class="what">Jij leest het na, past één zin aan en belt de klant terug.</span>
+          <span class="who">jouw werk</span></span>
+        </li>
+      </ol>
+      <p class="board-foot"><strong>Vijf handelingen, één keer jouw aandacht.</strong> Zo ziet bijna
+        elke werkstroom eruit die we automatiseren.</p>
+    </div>
+  </section>
+
+  <section class="next">
+    <h2>Wat we overnemen — en wat vooral niet.</h2>
+    <p>We beginnen niet met software, maar met de vraag waar jouw uren weglekken. Daarna bouwen we
+      alleen wat dat oplost.</p>
+  </section>
+</div>
+</body>
+</html>

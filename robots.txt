@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /design/
+Disallow: /brand/
+
+Sitemap: https://ermstrang.nl/sitemap.xml
