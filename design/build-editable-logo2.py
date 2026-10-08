@@ -61,7 +61,7 @@ s.shapes.add_picture(os.path.join(A,"mark-navy-512.png"), IN(64), IN(148), heigh
 textbox(s, 200, 146, 620, 50, [W()], PAPER)
 textbox(s, 800, 128, 748, 110, [[("Automatiseer het gedoe.", "Archivo", 46, True, -1.3)],
                                 [("Focus op je vak.", "Archivo", 46, True, -1.3)]], PAPER)
-textbox(s, 800, 240, 748, 26, [[("AI-assistenten op maat voor zzp en mkb · ermstrang.nl",
+textbox(s, 800, 240, 748, 26, [[("AI-assistenten op maat voor zzp en mkb · ermstrangtechnologies.nl",
                                 "Source Sans 3", 19, False, 0)]], DIM)
 
 # 2 — liggend lockup op papier + uitleg dat de tekst aanpasbaar is

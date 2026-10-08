@@ -17,19 +17,19 @@ assets/brand        kant-en-klare maten voor LinkedIn en social
 
 ## Online zetten (GitHub Pages)
 
-1. Maak een bestand `CNAME` met daarin je domein (bijv. `ermstrang.nl`).
+1. Maak een bestand `CNAME` met daarin je domein (bijv. `ermstrangtechnologies.nl`).
 2. Repo -> Settings -> Pages -> Source: `Deploy from a branch`, branch `main`, map `/ (root)`.
 3. DNS bij je provider:
    - `A`-records voor het root-domein naar `185.199.108.153`, `185.199.109.153`,
      `185.199.110.153`, `185.199.111.153`
    - `CNAME` voor `www` naar `OTcode02.github.io`
 4. "Enforce HTTPS" aanzetten zodra het certificaat er is.
-5. Gebruik je een ander domein dan `ermstrang.nl`, vervang het dan in `index.html`, `privacy.html`,
+5. Gebruik je een ander domein dan `ermstrangtechnologies.nl`, vervang het dan in `index.html`, `privacy.html`,
    `robots.txt` en `sitemap.xml`.
 
 ## Nog te vullen (staat ook als commentaar in de HTML)
 
-- [ ] e-mailadres: nu `info@ermstrang.nl`
+- [ ] e-mailadres: nu `info@ermstrangtechnologies.nl`
 - [ ] telefoonnummer, vestigingsadres, KvK-nummer, btw-id
 - [ ] privacyverklaring juridisch laten nakijken
 - [ ] bevestigen of de prijsalinea ("vaste opstartprijs en een vast bedrag per maand") zo mag blijven
