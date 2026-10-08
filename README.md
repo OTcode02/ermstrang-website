@@ -29,7 +29,7 @@ assets/brand        kant-en-klare maten voor LinkedIn en social
 
 ## Nog te vullen (staat ook als commentaar in de HTML)
 
-- [ ] e-mailadres: nu `info@ermstrangtechnologies.nl`
-- [ ] telefoonnummer, vestigingsadres, KvK-nummer, btw-id
+- [x] e-mailadres: `o.ermstrang@gmail.com`
+- [ ] telefoonnummer en vestigingsadres (KvK staat erin)
 - [ ] privacyverklaring juridisch laten nakijken
 - [ ] bevestigen of de prijsalinea ("vaste opstartprijs en een vast bedrag per maand") zo mag blijven
