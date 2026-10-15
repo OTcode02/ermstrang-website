@@ -112,6 +112,7 @@ strong{font-weight:600}
 .site-nav a{color:var(--navy); text-decoration:none; padding-block:.35rem;
   border-bottom:1px solid transparent;
   transition:border-color var(--d-hover) var(--ease-out-quart), color var(--d-hover) var(--ease-out-quart)}
+.site-nav a[aria-current="page"]{border-bottom-color:var(--navy); font-weight:600}
 @media (hover:hover) and (pointer:fine){
   .site-nav a:hover{border-bottom-color:var(--cyan); color:var(--cyan-ink)}
 }
@@ -322,6 +323,30 @@ h3{font-size:var(--step-2)}
 .site-foot__legal{margin-top:clamp(2rem,4vw,3rem); padding-top:1.1rem; border-top:1px solid var(--hairline);
   display:flex; flex-wrap:wrap; gap:.4rem 1.5rem; color:var(--muted); font-size:.88rem}
 
+/* ---------- juridische pagina's & tabs ---------- */
+.legal-nav{
+  display:inline-flex; flex-wrap:wrap; gap:.4rem; padding:.3rem;
+  background:var(--surface); border:1px solid var(--hairline); border-radius:var(--radius);
+  margin-block:1.25rem 2.25rem;
+}
+.legal-nav__tab{
+  display:inline-flex; align-items:center; padding:.5rem 1.15rem;
+  font-family:var(--display); font-weight:600; font-size:.95rem;
+  color:var(--muted); text-decoration:none; border-radius:var(--radius);
+  transition:color var(--d-hover) var(--ease-out-quart), background-color var(--d-hover) var(--ease-out-quart);
+}
+.legal-nav__tab:hover{color:var(--navy); background:var(--paper)}
+.legal-nav__tab[aria-current="page"], .legal-nav__tab.is-active{
+  background:var(--navy); color:var(--on-navy);
+}
+.legal-body{display:grid; gap:1.75rem}
+.legal-article{display:grid; gap:.75rem; padding-top:1.75rem; border-top:1px solid var(--hairline)}
+.legal-article:first-of-type{border-top:none; padding-top:0}
+.legal-article h2{font-size:var(--step-1); color:var(--navy); margin-top:.2rem}
+.legal-article p, .legal-article li{color:var(--navy); line-height:1.65}
+.legal-article ul, .legal-article ol{padding-left:1.35rem; display:grid; gap:.45rem}
+.legal-meta{font-size:.92rem; color:var(--muted); margin-bottom:.5rem}
+
 /* ---------- reveal-states ----------
    De startwaarde hangt aan html.js; dat klasse zet een inline scriptje in de <head>.
    Zonder JS (of als het script faalt) staat alles er dus gewoon. */
@@ -339,6 +364,7 @@ html.js .stamp__tick{transform:scale(.5); opacity:0}
 html.js .step--auto.in-stamp .stamp__tick{transform:none; opacity:1}
 
 @media (max-width:980px){
+  .site-nav{gap:1rem; font-size:.9rem}
   .hero{grid-template-columns:1fr; padding-bottom:2.5rem}
   .board{margin-bottom:0}
   .band--surface.overlap{border-top:1px solid var(--hairline); padding-top:var(--band)}

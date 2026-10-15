@@ -5,7 +5,10 @@ GitHub Pages.
 
 ```
 index.html          de landingspagina
-privacy.html        privacyverklaring (nog juridisch na te kijken)
+privacy.html        privacyverklaring (/privacy)
+privacy/index.html  privacyverklaring (/privacy/)
+voorwaarden.html    algemene voorwaarden (/voorwaarden)
+voorwaarden/index.html algemene voorwaarden (/voorwaarden/)
 brand/index.html    merkblad: kleuren, typografie, logo's, downloads
 design/             COMMIT-SHEET.md + DESIGN.md (ontwerpbesluiten), mockup, screenshots
 assets/css          style.css (tokens + componenten)
@@ -29,7 +32,7 @@ assets/brand        kant-en-klare maten voor LinkedIn en social
 
 ## Nog te vullen (staat ook als commentaar in de HTML)
 
-- [x] e-mailadres: `o.ermstrang@gmail.com`
+- [x] e-mailadres: `info@ermstrangtechnologies.nl`
 - [ ] telefoonnummer en vestigingsadres (KvK staat erin)
 - [ ] privacyverklaring juridisch laten nakijken
 - [ ] bevestigen of de prijsalinea ("vaste opstartprijs en een vast bedrag per maand") zo mag blijven
