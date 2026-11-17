@@ -726,8 +726,6 @@ input[type=range]{width:100%; margin-top:.8rem; accent-color:var(--navy); height
   html.js .feed li{opacity:1; transform:none; transition:none}
   html.js .scr.is-on{animation:none}
 }
-.home h1 mark{background:none; color:inherit; position:relative; white-space:nowrap}
-.home h1 mark::after{content:""; position:absolute; left:0; right:0; bottom:.04em; height:.14em; background:var(--cyan); z-index:-1}
 /* hero: zwevende akkoordkaart overlapt alleen de lege onderrand van het paneel */
 .hero2__visual{padding-bottom:8.5rem}
 .pane--main .pane__body{padding-bottom:3.25rem}
