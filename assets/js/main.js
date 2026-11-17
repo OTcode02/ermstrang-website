@@ -59,7 +59,7 @@
 
   /* ---------- demo: klantkaart ---------- */
   const clients = [
-    { name: 'Banketbakkerij Veldkamp', who: 'Lotte Veldkamp, eigenaar', last: 'Vandaag, mail over de nieuwe koelcel', next: 'Offerte nalezen en versturen', deal: 'Staffel B, 30 dagen betaaltermijn', auto: 'Automatisch bijgewerkt uit de mail van 08:02' },
+    { name: 'Banketbakkerij Veldkamp', who: 'Lotte Veldkamp, eigenaar', last: 'Vandaag, mail over de nieuwe koelcel', next: 'Offerte nalezen en versturen', deal: '30 dagen betaaltermijn', auto: 'Automatisch bijgewerkt uit de mail van 08:02' },
     { name: 'Pension Wadzicht', who: 'Wouter Hilbrink, beheerder', last: 'Gisteren, offerte warmtepomp verstuurd', next: 'Jouw akkoord op de prijs (boven € 2.500)', deal: 'Onderhoudscontract tot 2028', auto: 'Herinnering voor de open factuur verstuurd om 08:11' },
     { name: 'Groothandel Terlouw', who: 'Freek Terlouw, inkoop', last: 'Vorige week, koeling magazijn opgeleverd', next: 'Kortingsverzoek 12% beoordelen', deal: 'Vaste klant sinds 2021, levering altijd op vrijdag', auto: 'Omzet dit jaar bijgewerkt uit de boekhouding' },
     { name: 'Praktijk Bosrand', who: 'Nadia el Amrani, praktijkhouder', last: 'Vanochtend, aanvraag via de website', next: 'Meetafspraak inplannen (2 opties gemaild)', deal: 'Nieuw, 3 behandelruimtes', auto: 'Toegevoegd uit het contactformulier om 08:15' }

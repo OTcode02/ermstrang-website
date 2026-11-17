@@ -39,7 +39,7 @@ c) Wij: licht veld, echte producttaal (schermen die je kunt aanklikken), prijzen
 
 ## 7. Conversie-ontwerp (waarom iemand tekent)
 - Geen prijspakketten: de prijs wordt na de intake bepaald. De site legt uit hoe je aan een vaste prijs komt
-  (tijdscan, voorstel binnen 2 werkdagen, jij beslist).
+  (tijdscan, voorstel binnen 5 werkdagen, jij beslist).
 - Risico weg: vaste prijs vooraf, data blijft van jou, maandelijks opzegbaar, één aanspreekpunt.
 - Eén actie overal: "Plan je gratis tijdscan" (een uur). Sticky op mobiel.
 - Rekenhulp toont alleen uren en waarde, geen kosten.
