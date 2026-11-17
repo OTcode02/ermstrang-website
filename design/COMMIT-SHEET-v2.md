@@ -7,7 +7,7 @@
 > Register: **build**. Tokens uit v1 blijven (navy, papier, cyaan, Archivo + Source Sans 3).
 
 ## 1. Peak
-**De klikbare demo**: een echt werkend voorbeeld-systeem voor "Van Dam Installatietechniek" met
+**De klikbare demo**: een echt werkend voorbeeld-systeem voor "Wiersma Klimaattechniek" (verzonnen naam) met
 vier schermen (Overzicht, Klanten/CRM, Offertes, Inbox). De bezoeker keurt een offerte goed, ziet
 de teller oplopen, opent een klantkaart. Wat hij een collega vertelt: "je kon gewoon klikken in
 het systeem dat ze voor je bouwen."
@@ -38,8 +38,10 @@ c) Wij: licht veld, echte producttaal (schermen die je kunt aanklikken), prijzen
    en een rekenhulp die de beslissing voor de bezoeker uitrekent.
 
 ## 7. Conversie-ontwerp (waarom iemand tekent)
-- Prijs zichtbaar (Startpakket, Basis, Pro) met wat erin zit, excl. btw, maandelijks opzegbaar.
-- Risico weg: 14 dagen tevredenheidsgarantie op het Startpakket, vaste prijs, data blijft van jou.
-- Snelheid concreet: voorstel binnen 2 werkdagen, live binnen 10 werkdagen.
-- Eén actie overal: "Plan je gratis tijdscan" (30 minuten). Sticky op mobiel.
-- Geen verzonnen klantlogo's, reviews of aantallen: de site staat nog aan het begin.
+- Geen prijspakketten: de prijs wordt na de intake bepaald. De site legt uit hoe je aan een vaste prijs komt
+  (tijdscan, voorstel binnen 2 werkdagen, jij beslist).
+- Risico weg: vaste prijs vooraf, data blijft van jou, maandelijks opzegbaar, één aanspreekpunt.
+- Eén actie overal: "Plan je gratis tijdscan" (een uur). Sticky op mobiel.
+- Rekenhulp toont alleen uren en waarde, geen kosten.
+- Alle namen in de demo zijn verzonnen: geen echte klanten, niets van andere sites.
+- Geen verzonnen klantlogo's, reviews of aantallen.

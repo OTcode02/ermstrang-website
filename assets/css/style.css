@@ -739,3 +739,19 @@ input[type=range]{width:100%; margin-top:.8rem; accent-color:var(--navy); height
 .hero2__visual{padding-bottom:0; display:flex; flex-direction:column}
 .pane--float{position:relative; left:auto; right:auto; bottom:auto; margin:-2.5rem 0 0 -2.5rem; align-self:flex-start}
 @media (max-width:980px){ .pane--float{margin:-2.5rem 1rem 0 auto; align-self:flex-end} }
+
+/* kosten: drie stappen naar een vaste prijs (geen prijspakketten) */
+.cost{display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem}
+.cost__card{border:1px solid var(--hairline); border-radius:var(--r-lg); padding:1.6rem; background:var(--paper); display:flex; flex-direction:column}
+.cost__card h3{font-size:var(--step-2); margin-top:1.1rem}
+.cost__card p{color:var(--muted); margin-top:.55rem}
+.cost__num{display:inline-grid; place-items:center; width:2.4rem; height:2.4rem; border-radius:50%; background:var(--navy); color:var(--on-navy);
+  font-family:var(--display); font-weight:800}
+.cost__tag{margin-top:auto !important; padding-top:1.2rem; font-family:var(--display); font-weight:700; font-size:.92rem; color:var(--cyan-ink) !important}
+.cost__card--dark{background:var(--navy); border-color:var(--navy)}
+.cost__card--dark h3{color:var(--on-navy)}
+.cost__card--dark p{color:var(--on-navy-dim)}
+.cost__card--dark .cost__num{background:var(--cyan); color:var(--navy)}
+.cost__card--dark .cost__tag{color:var(--cyan) !important}
+.cost__incl{grid-template-columns:repeat(2,minmax(0,1fr)); gap:.6rem 2rem; margin-top:1.75rem; max-width:52rem}
+@media (max-width:980px){ .cost{grid-template-columns:1fr; max-width:36rem} .cost__incl{grid-template-columns:1fr} }

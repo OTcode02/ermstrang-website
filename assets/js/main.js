@@ -59,10 +59,10 @@
 
   /* ---------- demo: klantkaart ---------- */
   const clients = [
-    { name: 'Bakkerij Smit', who: 'Ingrid Smit, eigenaar', last: 'Vandaag, mail over de nieuwe koelcel', next: 'Offerte nalezen en versturen', deal: 'Staffel B, 30 dagen betaaltermijn', auto: 'Automatisch bijgewerkt uit de mail van 08:02' },
-    { name: 'Hotel De Linde', who: 'Joost Verhoef, facilitair', last: 'Gisteren, offerte warmtepomp verstuurd', next: 'Jouw akkoord op de prijs (boven € 2.500)', deal: 'Onderhoudscontract tot 2028', auto: 'Herinnering voor de open factuur verstuurd om 08:11' },
-    { name: 'Groothandel Kok', who: 'Peter Kok, inkoop', last: 'Vorige week, koeling magazijn opgeleverd', next: 'Kortingsverzoek 12% beoordelen', deal: 'Vaste klant sinds 2021, levering altijd op vrijdag', auto: 'Omzet dit jaar bijgewerkt uit de boekhouding' },
-    { name: 'Fysio Oost', who: 'Sanne de Wit, praktijkhouder', last: 'Vanochtend, aanvraag via de website', next: 'Meetafspraak inplannen (2 opties gemaild)', deal: 'Nieuw, 3 behandelruimtes', auto: 'Toegevoegd uit het contactformulier om 08:15' }
+    { name: 'Banketbakkerij Veldkamp', who: 'Lotte Veldkamp, eigenaar', last: 'Vandaag, mail over de nieuwe koelcel', next: 'Offerte nalezen en versturen', deal: 'Staffel B, 30 dagen betaaltermijn', auto: 'Automatisch bijgewerkt uit de mail van 08:02' },
+    { name: 'Pension Wadzicht', who: 'Wouter Hilbrink, beheerder', last: 'Gisteren, offerte warmtepomp verstuurd', next: 'Jouw akkoord op de prijs (boven € 2.500)', deal: 'Onderhoudscontract tot 2028', auto: 'Herinnering voor de open factuur verstuurd om 08:11' },
+    { name: 'Groothandel Terlouw', who: 'Freek Terlouw, inkoop', last: 'Vorige week, koeling magazijn opgeleverd', next: 'Kortingsverzoek 12% beoordelen', deal: 'Vaste klant sinds 2021, levering altijd op vrijdag', auto: 'Omzet dit jaar bijgewerkt uit de boekhouding' },
+    { name: 'Praktijk Bosrand', who: 'Nadia el Amrani, praktijkhouder', last: 'Vanochtend, aanvraag via de website', next: 'Meetafspraak inplannen (2 opties gemaild)', deal: 'Nieuw, 3 behandelruimtes', auto: 'Toegevoegd uit het contactformulier om 08:15' }
   ];
   const rows = $$('.crm__table tbody tr');
   const card = $('.card360');
@@ -82,19 +82,11 @@
     const u = Number(uren.value), t = Number(tarief.value);
     const terug = u * 0.5 * 4.33;           // helft automatiseerbaar, 4,33 weken per maand
     const waarde = terug * t;
-    const netto = waarde - 199;
     $('#o-uren').textContent = u + ' uur';
     $('#o-tarief').textContent = eur(t);
     $('#r-uren').textContent = Math.round(terug) + ' uur';
+    $('#r-jaar').textContent = Math.round(terug * 12) + ' uur';
     $('#r-waarde').textContent = eur(waarde);
-    $('#r-netto').textContent = (netto < 0 ? '- ' : '') + eur(Math.abs(netto));
-    const out = $('#r-terug');
-    if (netto > 0) {
-      const m = Math.max(1, Math.ceil(1450 / netto));
-      out.innerHTML = 'Het Startpakket is terugverdiend in <b>' + m + (m === 1 ? ' maand' : ' maanden') + '</b>.';
-    } else {
-      out.innerHTML = 'Bij zo weinig uren raden we het eerlijk af. <b>Bespreek het in de tijdscan.</b>';
-    }
   };
   if (uren && tarief) { uren.addEventListener('input', calc); tarief.addEventListener('input', calc); calc(); }
 
