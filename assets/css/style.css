@@ -755,3 +755,6 @@ input[type=range]{width:100%; margin-top:.8rem; accent-color:var(--navy); height
 .cost__card--dark .cost__tag{color:var(--cyan) !important}
 .cost__incl{grid-template-columns:repeat(2,minmax(0,1fr)); gap:.6rem 2rem; margin-top:1.75rem; max-width:52rem}
 @media (max-width:980px){ .cost{grid-template-columns:1fr; max-width:36rem} .cost__incl{grid-template-columns:1fr} }
+
+.stack__lead{max-width:none; font-size:1.02rem}
+.stack__lead b{color:var(--navy)}
