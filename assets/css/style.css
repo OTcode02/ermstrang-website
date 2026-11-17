@@ -715,11 +715,6 @@ input[type=range]{width:100%; margin-top:.8rem; accent-color:var(--navy); height
   .demo__tabs{grid-template-columns:1fr 1fr}
   .args--4{grid-template-columns:1fr}
   .stack__lead{max-width:none}
-  .dock{display:flex; justify-content:center; position:fixed; left:1rem; right:1rem; bottom:1rem; z-index:20;
-    background:var(--cyan); color:var(--navy); font-weight:700; text-decoration:none; padding:.95rem 1rem; border-radius:999px;
-    box-shadow:0 10px 30px -8px oklch(0.1 0.05 255 / .5); transition:transform 240ms var(--ease-out-quart), opacity 240ms var(--ease-out-quart)}
-  .dock.is-hidden{transform:translateY(140%); opacity:0}
-  .home .site-foot{padding-bottom:6rem}
 }
 @media (prefers-reduced-motion: reduce){
   .pill--live::before{animation:none}
