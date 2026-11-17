@@ -4,17 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Ermstrang Technologies: automatisering en software op maat voor zzp en mkb</title>
-<meta name="description" content="Wij automatiseren je terugkerende werk: met een slimme assistent of met software die speciaal voor jouw bedrijf is gebouwd. Mail, offertes, facturen, planning. Automatiseer het gedoe. Focus op je vak.">
+<title>Ermstrang Technologies: automatisering, dashboards en CRM op maat voor zzp en mkb</title>
+<meta name="description" content="Wij bouwen het systeem dat je terugkerende werk overneemt: mail, offertes, facturen, klantbeheer en een dashboard met je cijfers. Vaste prijs vooraf, live binnen tien werkdagen. Plan je gratis tijdscan.">
 <link rel="canonical" href="https://ermstrangtechnologies.nl/">
 <meta name="theme-color" content="#08213F">
 
-<!-- VERVANGEN VOOR LIVE: canonical/og:url hierboven en in sitemap.xml naar je echte domein -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="nl_NL">
 <meta property="og:site_name" content="Ermstrang Technologies">
-<meta property="og:title" content="Ermstrang Technologies: automatisering en software op maat voor zzp en mkb">
-<meta property="og:description" content="Automatiseer het gedoe. Focus op je vak. Wij automatiseren je terugkerende werk, met een assistent of met software op maat.">
+<meta property="og:title" content="Ermstrang Technologies: automatisering, dashboards en CRM op maat">
+<meta property="og:description" content="Automatiseer het gedoe. Focus op je vak. Een systeem op maat dat je mail, offertes en facturen voorbereidt, met een vaste prijs vooraf.">
 <meta property="og:url" content="https://ermstrangtechnologies.nl/">
 <meta property="og:image" content="https://ermstrangtechnologies.nl/assets/img/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -27,7 +26,7 @@
 <link rel="alternate icon" href="assets/img/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-<link rel="preload" href="assets/fonts/archivo-700-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/archivo-800-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/source-sans-3-400-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">
 {
@@ -44,17 +43,8 @@
       "taxID": "42187687",
       "identifier": "KvK 42187687",
       "foundingDate": "2026-10",
-      "areaServed": {
-        "@type": "Country",
-        "name": "Nederland"
-      },
-      "knowsAbout": [
-        "Automatisering",
-        "Software op maat",
-        "AI-assistenten",
-        "E-mailautomatisering",
-        "Reserveringssystemen"
-      ]
+      "areaServed": { "@type": "Country", "name": "Nederland" },
+      "knowsAbout": ["Automatisering", "Software op maat", "CRM op maat", "Dashboards", "AI-assistenten", "E-mailautomatisering"]
     },
     {
       "@type": "WebSite",
@@ -62,9 +52,16 @@
       "url": "https://ermstrangtechnologies.nl/",
       "name": "Ermstrang Technologies",
       "inLanguage": "nl-NL",
-      "publisher": {
-        "@id": "https://ermstrangtechnologies.nl/#org"
-      }
+      "publisher": { "@id": "https://ermstrangtechnologies.nl/#org" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ermstrangtechnologies.nl/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Moet ik technisch zijn?", "acceptedAnswer": { "@type": "Answer", "text": "Nee. Wij koppelen, bouwen en onderhouden. Jij gebruikt het via je eigen mail, je eigen mappen en een overzichtelijk dashboard." } },
+        { "@type": "Question", "name": "Zit ik vast aan een lang contract?", "acceptedAnswer": { "@type": "Answer", "text": "Nee. Na de inrichting is het abonnement maandelijks opzegbaar, met een opzegtermijn van een kalendermaand." } },
+        { "@type": "Question", "name": "Wat als het me niet bevalt?", "acceptedAnswer": { "@type": "Answer", "text": "Op het Startpakket zit een tevredenheidsgarantie van 14 dagen. Bevalt het niet, dan zoeken we samen een oplossing of krijg je je geld terug." } }
+      ]
     }
   ]
 }
@@ -72,7 +69,7 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <script>document.documentElement.classList.add('js');</script>
 </head>
-<body>
+<body class="home">
 <a class="skip" href="#main">Naar de inhoud</a>
 
 <header class="site-head">
@@ -82,301 +79,493 @@
       Ermstrang<span class="brand__light">Technologies</span>
     </a>
     <nav class="site-nav" aria-label="Hoofdmenu">
-      <a href="#wat">Wat we overnemen</a>
-      <a href="#hoe">Hoe het werkt</a>
-      <a href="#voor-wie">Voor wie</a>
-      <a href="/privacy">Privacy</a>
-      <a href="/voorwaarden">Voorwaarden</a>
-      <a href="#contact">Contact</a>
+      <a href="#demo">Demo</a>
+      <a href="#bouwen">Wat we bouwen</a>
+      <a href="#prijzen">Prijzen</a>
+      <a href="#werkwijze">Werkwijze</a>
+      <a href="#vragen">Vragen</a>
     </nav>
-    <a class="btn" href="#contact">Plan een kennismaking</a>
+    <a class="btn" href="#start">Gratis tijdscan</a>
   </div>
 </header>
 
 <main id="main">
 
-  <section class="wrap hero">
-    <div>
-      <p class="kicker">Automatisering en maatwerk software voor zzp en mkb</p>
+  <!-- 1. hero -->
+  <section class="wrap hero2">
+    <div class="hero2__copy">
+      <p class="kicker">Automatisering, dashboards en CRM op maat</p>
       <h1>Automatiseer <mark>het gedoe</mark>. Focus op je vak.</h1>
-      <p class="lede hero__lede">Wij automatiseren het terugkerende werk in je bedrijf: mail
-        beantwoorden, gegevens overtypen, offertes opstellen, facturen opvolgen. Met een slimme
-        assistent, met software die speciaal voor jouw bedrijf is gebouwd, of met allebei.
-        Wat overblijft is het werk waarvoor klanten jou bellen.</p>
+      <p class="lede hero2__lede">Wij bouwen het systeem dat je terugkerende werk overneemt: mail
+        beantwoorden, offertes maken, facturen opvolgen, klanten bijhouden. Jij keurt goed, het
+        systeem doet de rest. Met een vaste prijs, afgesproken voordat we beginnen.</p>
+      <ul class="checks">
+        <li>Vaste prijs vooraf, geen uren die oplopen</li>
+        <li>Voorstel binnen 2 werkdagen, live binnen 10</li>
+        <li>Maandelijks opzegbaar, je data blijft van jou</li>
+      </ul>
       <p class="hero__actions">
-        <a class="btn" href="#contact">Plan een kennismaking</a>
-        <a class="btn btn--ghost" href="#wat">Zie wat we overnemen</a>
+        <a class="btn btn--lg" href="#start">Plan je gratis tijdscan <span aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost btn--lg" href="#demo">Klik door de demo</a>
       </p>
-      <p class="hero__note">Geen pakket van de plank, maar gebouwd op jouw werkwijze. Het draait in
-        jouw eigen omgeving en wij begeleiden in het Nederlands.</p>
+      <p class="hero2__note">30 minuten, online of bij je op kantoor. Je houdt er een lijst met je drie
+        grootste tijdvreters aan over, ook als je daarna niets met ons doet.</p>
     </div>
 
-    <div class="board">
-      <div class="board__head">
-        <span>Werkstroom: nieuwe aanvraag</span>
-        <span>vandaag</span>
+    <div class="hero2__visual" aria-label="Voorbeeld: wat het systeem vanochtend deed">
+      <div class="pane pane--main" data-live>
+        <div class="pane__bar">
+          <span class="pane__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>Van Dam Installatietechniek</span>
+          <span class="pill pill--live">draait</span>
+        </div>
+        <div class="pane__body">
+          <p class="pane__hello">Goedemorgen, Mark. Dit is al gedaan:</p>
+          <ol class="feed">
+            <li><time>07:58</time><span><b>Mail-assistent</b> 9 nieuwe mails gesorteerd, 6 antwoorden klaargezet</span></li>
+            <li><time>08:04</time><span><b>Offertes</b> Concept voor Bakkerij Smit staat klaar, € 2.180</span></li>
+            <li><time>08:11</time><span><b>Facturen</b> Herinnering naar Hotel De Linde verstuurd</span></li>
+            <li><time>08:15</time><span><b>CRM</b> Nieuwe aanvraag via de site toegevoegd en ingepland</span></li>
+          </ol>
+          <div class="pane__sum">
+            <span>Handwerk bespaard vandaag</span>
+            <strong><span data-count="164" data-format="hm">2 u 44 min</span></strong>
+          </div>
+        </div>
       </div>
-      <ol class="flow">
-        <li class="step step--human">
-          <span class="step__t">08:12</span>
-          <span>
-            <span class="step__what">Een klant mailt: "kunnen jullie dit ook doen, en wat kost het?"</span>
-            <span class="step__who">komt binnen</span>
-          </span>
-        </li>
-        <li class="step step--auto">
-          <span class="step__t">08:12</span>
-          <span>
-            <span class="step__what">Het systeem leest de vraag, haalt de gegevens van deze klant erbij en zet de korting klaar die je altijd geeft.</span>
-            <span class="stamp"><span class="stamp__tick" aria-hidden="true"></span>gedaan</span>
-          </span>
-        </li>
-        <li class="step step--auto">
-          <span class="step__t">08:13</span>
-          <span>
-            <span class="step__what">Concept-offerte staat in je map, met dezelfde opmaak als je vorige tien.</span>
-            <span class="stamp"><span class="stamp__tick" aria-hidden="true"></span>gedaan</span>
-          </span>
-        </li>
-        <li class="step step--auto">
-          <span class="step__t">08:13</span>
-          <span>
-            <span class="step__what">De herinnering staat gepland voor de dag dat de betaaltermijn afloopt.</span>
-            <span class="stamp"><span class="stamp__tick" aria-hidden="true"></span>gedaan</span>
-          </span>
-        </li>
-        <li class="step step--human">
-          <span class="step__t">08:20</span>
-          <span>
-            <span class="step__what">Jij leest het na, past één zin aan en keurt versturen goed.</span>
-            <span class="step__who">jouw werk</span>
-          </span>
-        </li>
-      </ol>
-      <p class="board__foot"><strong>Vijf handelingen, één keer jouw aandacht, volledige controle.</strong> Zo ziet bijna
-        elke werkstroom eruit die we automatiseren.</p>
+      <div class="pane pane--float" role="group" aria-label="Wacht op jouw akkoord">
+        <p class="pane__label">Wacht op jou</p>
+        <p class="pane__ask"><b>Offerte OF-0413</b> Hotel De Linde, € 3.974</p>
+        <p class="pane__why">Boven € 2.500, dus jouw akkoord. Marge en staffel zijn gecontroleerd.</p>
+        <p class="pane__btns"><span class="mini-btn mini-btn--go">Akkoord</span><span class="mini-btn">Bekijk</span></p>
+      </div>
     </div>
   </section>
 
-  <!-- 2. wat we overnemen: een tabel, geen kaartjes -->
-  <section class="band--surface overlap" id="wat">
-    <div class="wrap band">
-      <div class="sec-head">
-        <h2>Wat we overnemen, en wat vooral niet.</h2>
-        <p>We beginnen niet met software, maar met de vraag waar jouw uren weglekken. Daarna bouwen
-          we alleen wat dat oplost. Wat hieronder staat is het terugkerende werk dat bij bijna elke
-          klant terugkomt, de invulling maken we per bedrijf.</p>
-      </div>
-      <table class="tasks">
-        <caption>Zeven werkstromen die we het vaakst automatiseren.</caption>
-        <colgroup><col><col><col></colgroup>
-        <thead>
-          <tr><th scope="col">Werkstroom</th><th scope="col">Wat er automatisch gebeurt</th><th scope="col">Wat jij ervan merkt</th></tr>
-        </thead>
-        <tbody>
-          <tr data-arm="rise">
-            <th scope="row">Mail van nieuwe klanten</th>
-            <td>Leest de vraag, herkent waar het over gaat en zet een antwoord klaar in jouw toon.</td>
-            <td>Je opent je mail en de antwoorden staan klaar om na te lezen.</td>
-          </tr>
-          <tr data-arm="rise">
-            <th scope="row">Offertes maken</th>
-            <td>Vult je eigen sjabloon met de gegevens van deze klant en de prijsafspraken die je hanteert.</td>
-            <td>Concept staat in je map, in dezelfde opmaak als altijd.</td>
-          </tr>
-          <tr data-arm="rise">
-            <th scope="row">Facturen en herinneringen</th>
-            <td>Verstuurt op de afgesproken dag, herinnert bij te late betaling en houdt het overzicht bij.</td>
-            <td>Geen factuur die blijft liggen omdat je het te druk had.</td>
-          </tr>
-          <tr data-arm="rise">
-            <th scope="row">Agenda en planning</th>
-            <td>Plant afspraken op de tijden die je zelf vrijhoudt en stuurt de bevestiging.</td>
-            <td>Geen heen-en-weer gemail meer over een datum.</td>
-          </tr>
-          <tr data-arm="rise">
-            <th scope="row">Gegevens overtypen</th>
-            <td>Haalt gegevens uit mail, formulieren en pdf's en zet ze in je administratie of crm.</td>
-            <td>Stoppen met kopiëren en plakken tussen twee schermen.</td>
-          </tr>
-          <tr data-arm="rise">
-            <th scope="row">Nalezen en opvolgen</th>
-            <td>Houdt bij wat blijft liggen en zet het klaar in de volgorde van de dag.</td>
-            <td>Je begint met een lijst in plaats van met een leeg scherm.</td>
-          </tr>
-          <tr data-arm="rise">
-            <th scope="row">Je eigen werkproces</th>
-            <td>Een eigen tool, portaal of koppeling voor het werk waar geen pakket voor bestaat: calculaties, roosters, een klantportaal.</td>
-            <td>Software die werkt zoals jij werkt, in plaats van andersom.</td>
-          </tr>
-        </tbody>
-      </table>
+  <!-- 2. koppelt met -->
+  <section class="stack" aria-label="Werkt met de software die je al hebt">
+    <div class="wrap stack__inner">
+      <p class="stack__lead">Je hoeft niets te vervangen. We koppelen met wat je al gebruikt, bijvoorbeeld:</p>
+      <ul class="stack__list">
+        <li>Outlook</li><li>Gmail</li><li>Google Agenda</li><li>Exact Online</li><li>Moneybird</li>
+        <li>e-Boekhouden</li><li>SnelStart</li><li>WeFact</li><li>HubSpot</li><li>Excel</li><li>SharePoint</li><li>Google Drive</li>
+      </ul>
     </div>
   </section>
 
-  <!-- 3. wat we bouwen: assistent of maatwerk software -->
+  <!-- 3. demo (signatuur) -->
+  <section class="demo" id="demo">
+    <div class="wrap">
+      <div class="demo__head">
+        <h2>Zo ziet het eruit. Klik gerust rond.</h2>
+        <p>Dit is een voorbeeld van een systeem dat we bouwen, met verzonnen gegevens. Het doet het
+          voorbereidende werk in je eigen mail en administratie. Alles wat buiten de afspraken valt,
+          komt bij jou terecht.</p>
+      </div>
+
+      <div class="demo__grid">
+        <div class="demo__tabs" role="tablist" aria-label="Schermen van het voorbeeldsysteem">
+          <button class="demo__tab" role="tab" id="tab-overzicht" aria-controls="scr-overzicht" aria-selected="true">
+            <b>Overzicht</b><span>Alles van vandaag op één scherm</span></button>
+          <button class="demo__tab" role="tab" id="tab-klanten" aria-controls="scr-klanten" aria-selected="false">
+            <b>Klanten</b><span>Je CRM, dat zichzelf bijhoudt</span></button>
+          <button class="demo__tab" role="tab" id="tab-offertes" aria-controls="scr-offertes" aria-selected="false">
+            <b>Offertes</b><span>Van aanvraag tot akkoord</span></button>
+          <button class="demo__tab" role="tab" id="tab-inbox" aria-controls="scr-inbox" aria-selected="false">
+            <b>Inbox</b><span>Antwoorden klaar om na te lezen</span></button>
+        </div>
+
+        <div class="app" aria-label="Voorbeeldsysteem">
+          <div class="app__bar">
+            <span class="pane__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="app__url">vandam.ermstrang.app</span>
+            <span class="app__note">Voorbeelddata, er wordt niets opgeslagen</span>
+          </div>
+          <div class="app__frame">
+            <aside class="app__side" aria-hidden="true">
+              <p class="app__org">Van Dam<span>Installatietechniek</span></p>
+              <ul>
+                <li data-for="overzicht" class="is-on">Overzicht</li>
+                <li data-for="klanten">Klanten</li>
+                <li data-for="offertes">Offertes <em data-badge>2</em></li>
+                <li data-for="inbox">Inbox</li>
+                <li>Facturen</li>
+                <li>Planning</li>
+              </ul>
+              <p class="app__where">Draait bij jou op kantoor</p>
+            </aside>
+
+            <div class="app__main">
+              <!-- scherm: overzicht -->
+              <section class="scr" id="scr-overzicht" role="tabpanel" aria-labelledby="tab-overzicht">
+                <header class="scr__head">
+                  <div><h3>Goedemiddag, Mark</h3><p>Dit deed je systeem deze week.</p></div>
+                  <span class="pill pill--live">draait</span>
+                </header>
+                <div class="kpis">
+                  <div class="kpi"><span>Taken afgehandeld</span><strong data-kpi="taken">214</strong><em>+18% op vorige week</em></div>
+                  <div class="kpi"><span>Handwerk bespaard</span><strong>11 u 20 m</strong><em>deze week</em></div>
+                  <div class="kpi kpi--ask"><span>Wacht op akkoord</span><strong data-kpi="wacht">2</strong><em>gemiddeld 4 min</em></div>
+                  <div class="kpi"><span>Openstaand</span><strong>€ 6.420</strong><em>3 facturen, 1 te laat</em></div>
+                </div>
+                <div class="scr__split">
+                  <figure class="chart">
+                    <figcaption>Taken per dag</figcaption>
+                    <div class="bars" aria-hidden="true">
+                      <span style="--h:46%"><i>ma</i></span><span style="--h:62%"><i>di</i></span>
+                      <span style="--h:55%"><i>wo</i></span><span style="--h:78%"><i>do</i></span>
+                      <span style="--h:92%" class="is-today"><i>vr</i></span>
+                    </div>
+                  </figure>
+                  <div class="asks">
+                    <p class="asks__t">Wacht op jou</p>
+                    <div class="ask" data-ask>
+                      <p><b>Offerte OF-0413</b> Hotel De Linde, € 3.974</p>
+                      <p class="ask__why">Boven € 2.500, dus jouw akkoord nodig.</p>
+                      <p class="ask__btns"><button type="button" class="mini-btn mini-btn--go" data-approve>Akkoord</button></p>
+                    </div>
+                    <div class="ask" data-ask>
+                      <p><b>Korting 12%</b> Groothandel Kok</p>
+                      <p class="ask__why">Buiten je staffel. Vorige keer gaf je 10%.</p>
+                      <p class="ask__btns"><button type="button" class="mini-btn mini-btn--go" data-approve>Akkoord</button></p>
+                    </div>
+                    <p class="asks__done" hidden>Alles afgehandeld. Tijd voor echt werk.</p>
+                  </div>
+                </div>
+              </section>
+
+              <!-- scherm: klanten -->
+              <section class="scr" id="scr-klanten" role="tabpanel" aria-labelledby="tab-klanten">
+                <header class="scr__head">
+                  <div><h3>Klanten</h3><p>Bijgewerkt uit je mail, agenda en facturen. Klik op een klant.</p></div>
+                </header>
+                <div class="crm">
+                  <table class="crm__table">
+                    <thead><tr><th scope="col">Klant</th><th scope="col">Status</th><th scope="col">Waarde</th></tr></thead>
+                    <tbody>
+                      <tr tabindex="0" data-client="0" class="is-on"><th scope="row">Bakkerij Smit</th><td><span class="tag tag--warm">Offerte klaar</span></td><td>€ 2.180</td></tr>
+                      <tr tabindex="0" data-client="1"><th scope="row">Hotel De Linde</th><td><span class="tag tag--ask">Akkoord nodig</span></td><td>€ 3.974</td></tr>
+                      <tr tabindex="0" data-client="2"><th scope="row">Groothandel Kok</th><td><span class="tag">Klant</span></td><td>€ 18.600</td></tr>
+                      <tr tabindex="0" data-client="3"><th scope="row">Fysio Oost</th><td><span class="tag tag--new">Nieuwe aanvraag</span></td><td>n.t.b.</td></tr>
+                    </tbody>
+                  </table>
+                  <div class="card360" aria-live="polite">
+                    <p class="card360__name" data-f="name">Bakkerij Smit</p>
+                    <p class="card360__who" data-f="who">Ingrid Smit, eigenaar</p>
+                    <dl>
+                      <dt>Laatste contact</dt><dd data-f="last">Vandaag, mail over de nieuwe koelcel</dd>
+                      <dt>Volgende stap</dt><dd data-f="next">Offerte nalezen en versturen</dd>
+                      <dt>Afspraken</dt><dd data-f="deal">Staffel B, 30 dagen betaaltermijn</dd>
+                    </dl>
+                    <p class="card360__auto" data-f="auto">Automatisch bijgewerkt uit de mail van 08:02</p>
+                  </div>
+                </div>
+              </section>
+
+              <!-- scherm: offertes -->
+              <section class="scr" id="scr-offertes" role="tabpanel" aria-labelledby="tab-offertes">
+                <header class="scr__head">
+                  <div><h3>Offertes</h3><p>Concept klaar binnen 12 minuten, was 2 tot 3 uur.</p></div>
+                </header>
+                <div class="kanban">
+                  <div class="lane"><p class="lane__t">Concept klaar <em>2</em></p>
+                    <div class="deal"><b>Bakkerij Smit</b><span>Koelcel en montage</span><strong>€ 2.180</strong></div>
+                    <div class="deal"><b>Fysio Oost</b><span>Airco, 3 ruimtes</span><strong>€ 5.460</strong></div>
+                  </div>
+                  <div class="lane"><p class="lane__t">Verstuurd <em>3</em></p>
+                    <div class="deal"><b>Hotel De Linde</b><span>Warmtepomp</span><strong>€ 3.974</strong></div>
+                    <div class="deal"><b>Garage Bos</b><span>Onderhoud</span><strong>€ 640</strong></div>
+                    <div class="deal deal--auto"><b>Herinnering gepland</b><span>Garage Bos, over 3 dagen</span></div>
+                  </div>
+                  <div class="lane"><p class="lane__t">Akkoord <em>4</em></p>
+                    <div class="deal"><b>Groothandel Kok</b><span>Koeling magazijn</span><strong>€ 12.300</strong></div>
+                    <div class="deal"><b>School De Vonk</b><span>Ventilatie</span><strong>€ 8.150</strong></div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- scherm: inbox -->
+              <section class="scr" id="scr-inbox" role="tabpanel" aria-labelledby="tab-inbox">
+                <header class="scr__head">
+                  <div><h3>Inbox</h3><p>Gesorteerd, gelabeld en met een concept-antwoord in jouw toon.</p></div>
+                </header>
+                <div class="mail">
+                  <ul class="mail__list">
+                    <li class="is-on"><b>Fysio Oost</b><span>Kunnen jullie ook airco doen?</span><em class="tag tag--new">Aanvraag</em></li>
+                    <li><b>Hotel De Linde</b><span>Factuur 2026-118</span><em class="tag">Betaald</em></li>
+                    <li><b>Leverancier Technika</b><span>Levertijd units week 48</span><em class="tag">Planning</em></li>
+                  </ul>
+                  <div class="mail__draft">
+                    <p class="mail__meta">Concept-antwoord aan Fysio Oost</p>
+                    <p>Hoi Sanne,</p>
+                    <p>Zeker, airco voor drie behandelruimtes doen we vaker. Ik kan donderdag 10:00 of
+                      vrijdag 14:00 langskomen om op te meten. Welke past beter?</p>
+                    <p>Groet, Mark</p>
+                    <p class="mail__btns"><span class="mini-btn mini-btn--go">Versturen</span><span class="mini-btn">Aanpassen</span></p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo__cta">
+        <p><b>Hoe ziet dit eruit met jouw software?</b> In de tijdscan kijken we naar jouw systemen en
+          schetsen we jouw versie van dit scherm.</p>
+        <a class="btn btn--on-navy btn--lg" href="#start">Plan je gratis tijdscan</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. wat we bouwen -->
   <section class="band" id="bouwen">
     <div class="wrap">
       <div class="sec-head">
         <h2>Wat we bouwen.</h2>
-        <p>Automatiseren is het doel, de techniek kiezen we erbij. Soms is een slimme assistent
-          genoeg, soms heb je software nodig die er nog niet is. Vaak is het een combinatie.</p>
+        <p>We beginnen bij de plek waar je uren weglekken en kiezen daarna de techniek. Vaak is het een
+          combinatie van deze drie, gebouwd als één systeem dat elke dag voor je draait.</p>
       </div>
-      <div class="who" data-arm="blur">
-        <div class="who__label">Assistenten<span>Voor werk met taal, mail en documenten</span></div>
-        <div class="who__body">
-          <p>Een assistent leest mee in je mail, documenten en agenda en zet het werk voor je klaar.
-            Handig waar elke vraag net anders is, maar het antwoord wel steeds op hetzelfde neerkomt.</p>
-          <ul class="who__list">
-            <li>Antwoorden op klantvragen in jouw toon, klaar om na te lezen.</li>
-            <li>Gegevens uit mail en pdf's halen en op de juiste plek zetten.</li>
-            <li>Offertes en facturen voorbereiden in je eigen sjablonen.</li>
+      <div class="offer">
+        <article class="offer__card offer__card--big" data-arm="rise">
+          <div class="offer__art" aria-hidden="true">
+            <div class="mini-dash">
+              <div class="mini-dash__row"><span>Omzet deze maand</span><b>€ 24.880</b></div>
+              <div class="mini-dash__bars"><i style="--h:40%"></i><i style="--h:58%"></i><i style="--h:50%"></i><i style="--h:72%"></i><i style="--h:66%"></i><i style="--h:88%"></i></div>
+              <div class="mini-dash__list">
+                <p><span class="tag tag--warm">Offerte</span> Bakkerij Smit <b>€ 2.180</b></p>
+                <p><span class="tag tag--ask">Akkoord</span> Hotel De Linde <b>€ 3.974</b></p>
+              </div>
+            </div>
+          </div>
+          <h3>Dashboards en CRM op maat</h3>
+          <p>Je klanten, offertes, planning en cijfers op één scherm, ingericht zoals jij werkt. Geen
+            pakket waar je je werkwijze op moet aanpassen, en geen Excel dat je eerst moet vullen.</p>
+          <ul class="ticks">
+            <li>Klantkaart die zichzelf bijwerkt uit mail en facturen</li>
+            <li>Omzet, openstaande facturen en pijplijn in één oogopslag</li>
+            <li>Klantportaal of planning erbij als je dat nodig hebt</li>
           </ul>
-        </div>
-      </div>
-      <div class="who" data-arm="blur">
-        <div class="who__label">Software op maat<span>Voor werk waar geen pakket voor bestaat</span></div>
-        <div class="who__body">
-          <p>Past geen standaardpakket bij hoe jij werkt? Dan bouwen we software speciaal voor jouw
-            bedrijf: precies de schermen, berekeningen en koppelingen die je nodig hebt, en niets
-            dat je niet gebruikt.</p>
-          <dl class="who__defs">
-            <dt>Eigen tools</dt><dd>Calculaties, roosters of planningen volgens jouw regels.</dd>
-            <dt>Portalen</dt><dd>Een plek waar klanten of medewerkers zelf gegevens invullen en inzien.</dd>
-            <dt>Koppelingen</dt><dd>Systemen die nu los van elkaar staan laten samenwerken.</dd>
-            <dt>Dashboards</dt><dd>Je cijfers op één scherm, zonder eerst Excel te vullen.</dd>
-          </dl>
-        </div>
+        </article>
+        <article class="offer__card" data-arm="rise">
+          <div class="offer__art offer__art--chat" aria-hidden="true">
+            <p class="bubble bubble--q">Welke offertes staan nog open?</p>
+            <p class="bubble">Drie, samen € 11.614. Garage Bos krijgt donderdag een herinnering.</p>
+          </div>
+          <h3>AI-assistent voor mail en documenten</h3>
+          <p>Leest je mail, zet antwoorden klaar in jouw toon en haalt gegevens uit pdf's. Jij leest na
+            en drukt op versturen.</p>
+        </article>
+        <article class="offer__card" data-arm="rise">
+          <div class="offer__art offer__art--link" aria-hidden="true">
+            <span class="node">Mail</span><span class="node node--core">Jouw systeem</span><span class="node">Boekhouding</span>
+          </div>
+          <h3>Koppelingen</h3>
+          <p>Systemen die nu los van elkaar staan laten samenwerken. Nooit meer gegevens overtypen van
+            het ene scherm naar het andere.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- 4. hoe het werkt -->
-  <section class="band--airy" id="hoe">
+  <!-- 5. rekenhulp -->
+  <section class="band--surface band calc-band" id="opbrengst">
+    <div class="wrap calc">
+      <div class="calc__copy">
+        <h2>Wat levert het jou op?</h2>
+        <p class="lede">Schuif met de twee knoppen. We rekenen voorzichtig: we gaan ervan uit dat de
+          helft van je terugkerende werk te automatiseren is. In de tijdscan rekenen we het precies door.</p>
+        <div class="field">
+          <label for="c-uren">Uren per week aan terugkerend werk <output id="o-uren" for="c-uren">8 uur</output></label>
+          <input type="range" id="c-uren" min="2" max="30" step="1" value="8">
+          <p class="field__hint">Mail, offertes, facturen, overtypen, opvolgen.</p>
+        </div>
+        <div class="field">
+          <label for="c-tarief">Wat een uur van jou waard is <output id="o-tarief" for="c-tarief">€ 65</output></label>
+          <input type="range" id="c-tarief" min="35" max="150" step="5" value="65">
+          <p class="field__hint">Je uurtarief, of wat je een medewerker per uur betaalt.</p>
+        </div>
+      </div>
+      <div class="calc__out" aria-live="polite">
+        <div class="calc__row"><span>Uren terug per maand</span><strong id="r-uren">17 uur</strong></div>
+        <div class="calc__row"><span>Waarde per maand</span><strong id="r-waarde">€ 1.127</strong></div>
+        <div class="calc__row"><span>Min abonnement Basis</span><strong>€ 199</strong></div>
+        <div class="calc__total"><span>Netto per maand</span><strong id="r-netto">€ 928</strong></div>
+        <p class="calc__payback" id="r-terug">Het Startpakket is terugverdiend in <b>2 maanden</b>.</p>
+        <a class="btn btn--lg" href="#start">Reken het door voor mijn bedrijf</a>
+        <p class="calc__small">Rekenvoorbeeld, excl. btw. Geen belofte, wel een eerlijk startpunt.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. werkwijze -->
+  <section class="band--airy" id="werkwijze">
     <div class="wrap">
       <div class="sec-head">
-        <h2>Van kennismaking tot iets dat draait.</h2>
-        <p>Drie stappen, en na de eerste weet je of het zin heeft om verder te gaan.</p>
+        <h2>Binnen twee weken draait het.</h2>
+        <p>Vier stappen, en na de eerste weet je precies wat het kost en wat het oplevert. Je zit pas
+          ergens aan vast als je het voorstel tekent.</p>
       </div>
-      <div class="how">
+      <div class="how how--4">
         <div class="how__rule" data-arm="line" aria-hidden="true"></div>
         <div class="how__step" data-arm="rise">
           <span class="how__num" aria-hidden="true">1</span>
-          <h3>Kennismaking</h3>
-          <p>We lopen je week door en noteren waar tijd weglekt. Je krijgt een eerlijke inschatting:
-            wat loont om te automatiseren, en wat je vooral zelf moet blijven doen.</p>
-          <p class="how__in"><b>Jij levert aan</b>Een uur, en een inkijk tot de systemen waar je nu in werkt.</p>
+          <h3>Gratis tijdscan</h3>
+          <p>Een half uur. We lopen je week door en noteren waar je tijd weglekt.</p>
+          <p class="how__in"><b>Wanneer</b>Deze week nog</p>
         </div>
         <div class="how__step" data-arm="rise">
           <span class="how__num" aria-hidden="true">2</span>
-          <h3>Bouwen op jouw werkwijze</h3>
-          <p>We koppelen je mail, agenda en administratie en bouwen de oplossing rond de afspraken
-            die jij toch al hanteert. Je test mee vanaf de eerste versie, niet pas aan het eind.</p>
-          <p class="how__in"><b>Jij levert aan</b>Feedback op de eerste versie, en je eigen voorbeelden.</p>
+          <h3>Voorstel met vaste prijs</h3>
+          <p>Wat we automatiseren, wat het kost, wat het oplevert en een installatiedatum.</p>
+          <p class="how__in"><b>Wanneer</b>Binnen 2 werkdagen</p>
         </div>
         <div class="how__step" data-arm="rise">
           <span class="how__num" aria-hidden="true">3</span>
+          <h3>Bouwen en installeren</h3>
+          <p>We koppelen je mail, agenda en administratie en leren je er in twee korte sessies mee werken.</p>
+          <p class="how__in"><b>Wanneer</b>Binnen 10 werkdagen</p>
+        </div>
+        <div class="how__step" data-arm="rise">
+          <span class="how__num" aria-hidden="true">4</span>
           <h3>Draaien en bijstellen</h3>
-          <p>Het draait in jouw eigen omgeving. Wij kijken of het klopt en stellen bij als je
-            werkwijze verandert: een nieuwe klantgroep, andere prijzen, extra mensen.</p>
-          <p class="how__in"><b>Jij levert aan</b>Een mailtje als iets niet klopt. Meer niet.</p>
+          <p>Wij houden het in de gaten en passen het aan als je werkwijze verandert.</p>
+          <p class="how__in"><b>Wanneer</b>Elke maand, opzegbaar</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 5. voor wie -->
-  <section class="band--tight" id="voor-wie">
+  <!-- 7. prijzen -->
+  <section class="band band--surface" id="prijzen">
     <div class="wrap">
       <div class="sec-head">
-        <h2>Voor wie we dit bouwen.</h2>
-        <p>Twee soorten bedrijven, twee verschillende oplossingen. De aanpak verschilt meer dan de
-          naam doet vermoeden.</p>
+        <h2>Eerlijke prijzen, vooraf op tafel.</h2>
+        <p>Eenmalig het Startpakket, daarna een vast bedrag per maand. Alle bedragen excl. btw. Na de
+          inrichting maandelijks opzegbaar.</p>
       </div>
-      <div class="who" data-arm="blur">
-        <div class="who__label">Zzp<span>Je bent de enige die alles doet</span></div>
-        <div class="who__body">
-          <p>Acquisitie, uitvoering, administratie: het komt allemaal op één bord terecht. Wij
-            automatiseren de terugkerende stukken, jij houdt het vak en het klantcontact.</p>
-          <ul class="who__list">
-            <li>Je avondadministratie wordt geautomatiseerd, niet naar een cursus verplaatst.</li>
-            <li>Offertes en facturen in jouw eigen opmaak, zonder overtypen.</li>
-            <li>Eén oplossing die op elkaar aansluit, in plaats van vijf losse tools die je allemaal moet leren.</li>
+      <div class="plans">
+        <article class="plan plan--start">
+          <p class="plan__name">Startpakket</p>
+          <p class="plan__price"><b>€ 1.450</b><span>eenmalig</span></p>
+          <p class="plan__lead">Alles om te starten, in een halve dag geïnstalleerd.</p>
+          <ul class="ticks">
+            <li>Koppeling met je mail, agenda en mappen</li>
+            <li>Vijf werkstromen ingericht op jouw werkwijze</li>
+            <li>Twee trainingen van een uur</li>
+            <li>30 dagen extra begeleiding na de start</li>
           </ul>
-        </div>
+          <p class="plan__seal">14 dagen tevredenheidsgarantie</p>
+        </article>
+        <article class="plan">
+          <p class="plan__name">Basis</p>
+          <p class="plan__price"><b>€ 199</b><span>per maand</span></p>
+          <p class="plan__lead">Voor de zzp'er die het gedoe kwijt wil.</p>
+          <ul class="ticks">
+            <li>Eén gebruiker, de standaard werkstromen</li>
+            <li>Dagelijkse versleutelde back-up</li>
+            <li>Updates en bewaking</li>
+            <li>Tot 1 uur support per maand</li>
+            <li>Reactie binnen één werkdag</li>
+          </ul>
+          <a class="btn btn--ghost" href="#start">Start met Basis</a>
+        </article>
+        <article class="plan plan--pro">
+          <p class="plan__flag">Voor wie meer wil overlaten</p>
+          <p class="plan__name">Pro</p>
+          <p class="plan__price"><b>€ 299</b><span>per maand</span></p>
+          <p class="plan__lead">Alles van Basis, plus:</p>
+          <ul class="ticks">
+            <li>Offertes, facturatie en klantdossiers</li>
+            <li>Dashboard met je cijfers</li>
+            <li>2,5 uur support per maand</li>
+            <li>Reactie binnen 4 werkuren</li>
+            <li>Maandrapport en elk kwartaal een verbetersessie</li>
+          </ul>
+          <a class="btn btn--on-navy" href="#start">Start met Pro</a>
+        </article>
       </div>
-      <div class="who" data-arm="blur">
-        <div class="who__label">Mkb<span>Je hebt mensen die elkaars werk overnemen</span></div>
-        <div class="who__body">
-          <p>Bij meer dan een paar mensen zit de winst niet in één taak, maar in het voorbereidende
-            werk per rol. De automatisering doet dat voorbereiden, je team doet het gesprek.</p>
-          <dl class="who__defs">
-            <dt>Administratie</dt><dd>Facturen, herinneringen en gegevens uit mail halen.</dd>
-            <dt>Sales</dt><dd>Aanvragen voorbereiden, offertes in de huisstijl, opvolging plannen.</dd>
-            <dt>Planning</dt><dd>Afspraken inplannen binnen de ruimte die je vrijhoudt.</dd>
-            <dt>Klantcontact</dt><dd>Standaardvragen afhandelen, de rest naar de juiste persoon.</dd>
-          </dl>
-        </div>
-      </div>
+      <p class="plans__more"><b>Extra gebruiker of vestiging:</b> € 99 per maand. <b>Software op maat</b>,
+        zoals een eigen CRM, portaal of planning: een vaste projectprijs na de tijdscan.</p>
     </div>
   </section>
 
-
+  <!-- 8. zekerheid -->
   <section class="navy band">
     <div class="wrap">
       <div class="sec-head">
-        <h2>Waarom op maat, en niet een pakket van de plank.</h2>
-        <p>Standaardsoftware laat je jouw werkwijze aanpassen aan de tool. Wij draaien het om.</p>
+        <h2>Je weet waar je aan begint.</h2>
+        <p>Een nieuw systeem kiezen voelt als een risico. Daarom hebben we de risico's zoveel mogelijk
+          bij ons gelegd.</p>
       </div>
-      <div class="args">
-        <div class="arg">
-          <h3>We beginnen bij jouw werkstroom</h3>
-          <p>Geen product dat je moet leren, maar een assistent of eigen software die de stappen
-            volgt die je al hanteert. Pas als het proces klopt, kiezen we de techniek.</p>
-        </div>
-        <div class="arg">
-          <h3>Het draait in jouw omgeving</h3>
-          <p>Je gegevens blijven waar ze zijn. Wij bouwen de koppelingen met wat je al gebruikt:</p>
-          <ul>
-            <li>je eigen mail en agenda</li>
-            <li>je eigen administratie of crm</li>
-            <li>je eigen map- en sjabloonstructuur</li>
-          </ul>
-        </div>
-        <div class="arg">
-          <h3>Je weet vooraf wat het kost</h3>
-          <p>Een vaste opstartprijs en een vast bedrag per maand, afgesproken voor we beginnen.
-            Geen uren die oplopen tijdens het bouwen.</p>
-        </div>
+      <div class="args args--4">
+        <div class="arg"><h3>Vaste prijs</h3><p>Afgesproken voor we beginnen. Geen nacalculatie, geen uren die oplopen tijdens het bouwen.</p></div>
+        <div class="arg"><h3>14 dagen garantie</h3><p>Bevalt het Startpakket niet, dan lossen we het op of krijg je je geld terug.</p></div>
+        <div class="arg"><h3>Jouw data, jouw omgeving</h3><p>Het systeem draait bij jou. Je gegevens gaan niet naar een groot platform om er op te trainen.</p></div>
+        <div class="arg"><h3>Maandelijks opzegbaar</h3><p>Geen jaarcontract. Je blijft omdat het werkt, niet omdat het moet.</p></div>
       </div>
     </div>
   </section>
 
-  <section class="band" id="contact">
-    <div class="wrap contact">
+  <!-- 9. vragen -->
+  <section class="band" id="vragen">
+    <div class="wrap faq">
       <div>
-        <h2>Plan een kennismaking.</h2>
-        <p class="lede" style="margin-top:1.1rem">Een uur, vrijblijvend. We kijken naar je week,
-          rekenen door wat automatiseren oplevert en zeggen het eerlijk als het bij jou niets
-          oplevert.</p>
-        <p class="hero__actions">
-          <a class="btn" href="mailto:info@ermstrangtechnologies.nl?subject=Kennismaking%20Ermstrang%20Technologies">Mail voor een afspraak</a>
-        </p>
-        <ul class="contact__list">
-          <li><a href="mailto:info@ermstrangtechnologies.nl">info@ermstrangtechnologies.nl</a><span>Reactie binnen één werkdag</span></li>
+        <h2>Vragen die we vaak krijgen.</h2>
+        <p class="lede" style="margin-top:1rem">Staat je vraag er niet bij? Mail naar
+          <a class="link" href="mailto:info@ermstrangtechnologies.nl">info@ermstrangtechnologies.nl</a>, je hebt binnen een werkdag antwoord.</p>
+      </div>
+      <div class="faq__list">
+        <details open><summary>Moet ik technisch zijn?</summary>
+          <p>Nee. Wij koppelen, bouwen en onderhouden. Jij werkt gewoon in je eigen mail en mappen, en
+            kijkt in het dashboard als je wilt weten hoe het gaat.</p></details>
+        <details><summary>Verstuurt het systeem zomaar dingen namens mij?</summary>
+          <p>Alleen wat jij vooraf goedkeurt. Je bepaalt per werkstroom wat automatisch mag en wat eerst
+            bij jou langs moet, bijvoorbeeld alles boven een bepaald bedrag.</p></details>
+        <details><summary>Werkt het met mijn boekhoudpakket?</summary>
+          <p>Met de meeste wel: Exact Online, Moneybird, e-Boekhouden, SnelStart, WeFact en meer. In de
+            tijdscan checken we jouw pakket. Kan het niet, dan zeggen we dat eerlijk.</p></details>
+        <details><summary>Waar staan mijn gegevens?</summary>
+          <p>Het systeem draait bij jou op kantoor, op een kastje van ons of op je eigen server. Je
+            gegevens blijven waar ze zijn en we tekenen een verwerkersovereenkomst.</p></details>
+        <details><summary>Zit ik vast aan een lang contract?</summary>
+          <p>Nee. Na de inrichting is het abonnement maandelijks opzegbaar, met een opzegtermijn van
+            een kalendermaand.</p></details>
+        <details><summary>Wat is het verschil tussen Basis en Pro?</summary>
+          <p>Basis neemt je mail, agenda en standaardwerk over voor één persoon. Pro voegt offertes,
+            facturatie, klantdossiers en een dashboard toe, met meer support en snellere reactie.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. start -->
+  <section class="navy band start" id="start">
+    <div class="wrap start__grid">
+      <div>
+        <h2>Over twee weken doet het gedoe zichzelf.</h2>
+        <p class="start__lede">Plan een gratis tijdscan van 30 minuten. Binnen twee werkdagen heb je een
+          voorstel met een vaste prijs en een installatiedatum. Pas als je dat tekent, beginnen we.</p>
+        <ul class="checks checks--on-navy">
+          <li>Gratis en vrijblijvend</li>
+          <li>Online of bij je op kantoor</li>
+          <li>Reactie binnen één werkdag</li>
         </ul>
       </div>
-      <aside class="contact__ask">
-        <h3>Wat kost het?</h3>
-        <p>Dat hangt af van hoeveel werkstromen we automatiseren en hoeveel systemen eraan vast
-          zitten. Na kennismaking rekenen we het door voor jouw situatie, zodat je vooraf weet
-          waar je aan toe bent.</p>
-        <p>Liever eerst schrijven? Stuur een mail met je grootste tijdvreter van deze week, dan
-          zeggen we of automatiseren daar iets aan verandert.</p>
-      </aside>
+      <form class="lead" id="lead" action="mailto:info@ermstrangtechnologies.nl" method="post" enctype="text/plain">
+        <p class="lead__t">Plan je tijdscan</p>
+        <label>Naam<input name="naam" autocomplete="name" required></label>
+        <label>Bedrijf<input name="bedrijf" autocomplete="organization"></label>
+        <label>E-mail of telefoon<input name="contact" autocomplete="email" required></label>
+        <label>Wat kost je nu de meeste tijd?<textarea name="tijdvreter" rows="3" placeholder="Bijvoorbeeld: offertes maken, facturen achter de broek aanzitten"></textarea></label>
+        <button class="btn btn--on-navy btn--lg" type="submit">Verstuur aanvraag <span aria-hidden="true">→</span></button>
+        <p class="lead__note">Je mailprogramma opent met je aanvraag erin. Liever direct mailen?
+          <a href="mailto:info@ermstrangtechnologies.nl?subject=Gratis%20tijdscan">info@ermstrangtechnologies.nl</a></p>
+      </form>
     </div>
   </section>
 </main>
+
+<a class="dock" href="#start">Plan je gratis tijdscan <span aria-hidden="true">→</span></a>
 
 <footer class="site-foot">
   <div class="wrap">
@@ -386,25 +575,26 @@
           <img src="assets/img/mark-dots.svg" width="34" height="34" alt="" aria-hidden="true">
           Ermstrang<span class="brand__light">Technologies</span>
         </a>
-        <p class="site-foot__tag">Automatiseer het gedoe. Focus op je vak. Automatisering en software
-          op maat voor zzp'ers en mkb'ers.</p>
+        <p class="site-foot__tag">Automatiseer het gedoe. Focus op je vak. Automatisering, dashboards
+          en software op maat voor zzp'ers en mkb'ers.</p>
       </div>
       <div>
         <h4>Navigatie</h4>
         <ul>
-          <li><a href="#wat">Wat we overnemen</a></li>
+          <li><a href="#demo">Demo</a></li>
           <li><a href="#bouwen">Wat we bouwen</a></li>
-          <li><a href="#hoe">Hoe het werkt</a></li>
-          <li><a href="#voor-wie">Voor wie</a></li>
+          <li><a href="#prijzen">Prijzen</a></li>
+          <li><a href="#werkwijze">Werkwijze</a></li>
+          <li><a href="#vragen">Vragen</a></li>
           <li><a href="/privacy">Privacy</a></li>
           <li><a href="/voorwaarden">Voorwaarden</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div>
         <h4>Contact</h4>
         <ul>
           <li><a href="mailto:info@ermstrangtechnologies.nl">info@ermstrangtechnologies.nl</a></li>
+          <li><a href="#start">Plan je gratis tijdscan</a></li>
         </ul>
       </div>
     </div>
