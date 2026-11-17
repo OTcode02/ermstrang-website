@@ -766,3 +766,15 @@ input[type=range]{width:100%; margin-top:.8rem; accent-color:var(--navy); height
 
 /* tijdscan direct na de zekerheden: iets donkerder zodat de twee navy banden niet in elkaar lopen */
 .start{background:var(--navy-900); border-top:1px solid oklch(0.40 0.05 253)}
+
+/* ritme: aansluitende blokken nooit dezelfde kleur
+   kop wit, hero papier, koppelingen wit, demo navy, aanbod papier, rekenhulp wit,
+   werkwijze papier, zekerheid wit, tijdscan navy, vragen papier, footer wit */
+.home .site-head{background:var(--surface)}
+.start{background:var(--navy); border-top:0}
+#werkwijze .cost__card:not(.cost__card--dark){background:var(--surface)}
+.sure{border-block:1px solid var(--hairline)}
+.sure .arg{border-top-color:var(--hairline)}
+.sure .arg h3{color:var(--navy)}
+.sure .arg p{color:var(--muted)}
+.home .site-foot{background:var(--surface)}
