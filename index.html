@@ -91,63 +91,53 @@
 <main id="main">
 
   <!-- 1. hero -->
-  <section class="hero3">
-    <div class="wrap">
-      <p class="kicker kicker--c">Automatisering, maatwerk software, apps en klantportalen</p>
-      <h1>Automatiseer het gedoe.<span>Focus op je vak.</span></h1>
-      <p class="lede hero3__lede">Wij bouwen het systeem dat je terugkerende werk overneemt, voor een vaste prijs
-        die vooraf vaststaat. Jij houdt de tijd over voor wat je écht goed kunt.</p>
-      <p class="hero__actions hero3__actions">
+  <section class="wrap hero2">
+    <div class="hero2__copy">
+      <p class="kicker">Automatisering, maatwerk software, apps en klantportalen</p>
+      <h1>Automatiseer <mark>het gedoe</mark>. Focus op je vak.</h1>
+      <p class="lede hero2__lede">Wij bouwen het systeem dat je terugkerende werk overneemt: mail
+        beantwoorden, offertes maken, facturen opvolgen, klanten bijhouden. Jij keurt goed, het
+        systeem doet de rest. Met een vaste prijs, afgesproken voordat we beginnen.</p>
+      <ul class="checks">
+        <li>Vaste prijs vooraf, geen uren die oplopen</li>
+        <li>Voorstel binnen 5 werkdagen</li>
+        <li>Maandelijks opzegbaar, je data blijft van jou</li>
+      </ul>
+      <p class="hero__actions">
         <a class="btn btn--lg" href="#start">Plan je gratis tijdscan <span aria-hidden="true">→</span></a>
-        <a class="hero3__link" href="#demo">Of klik eerst door de demo</a>
+        <a class="btn btn--ghost btn--lg" href="#demo">Klik door de demo</a>
       </p>
+      <p class="hero2__note">Een uur, online of bij je op kantoor. Je houdt er een lijst met je drie
+        grootste tijdvreters aan over, ook als je daarna niets met ons doet.</p>
+    </div>
 
-      <figure class="week" data-state="nu" aria-label="Voorbeeld: een werkweek voor en na het systeem">
-        <div class="week__head">
-          <p class="week__title">Een werkweek bij Wiersma Klimaattechniek</p>
-          <div class="week__tog" role="group" aria-label="Weergave">
-            <button type="button" data-set="nu" aria-pressed="true">Nu</button>
-            <button type="button" data-set="na" aria-pressed="false">Met je systeem</button>
+    <div class="hero2__visual" aria-label="Voorbeeld: wat het systeem vanochtend deed">
+      <div class="pane pane--main" data-live>
+        <div class="pane__bar">
+          <span class="pane__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>Wiersma Klimaattechniek</span>
+          <span class="pill pill--live">draait</span>
+        </div>
+        <div class="pane__body">
+          <p class="pane__hello">Goedemorgen, Ruben. Dit is al gedaan:</p>
+          <ol class="feed">
+            <li><time>07:58</time><span><b>Mail-assistent</b> 9 nieuwe mails gesorteerd, 6 antwoorden klaargezet</span></li>
+            <li><time>08:04</time><span><b>Offertes</b> Concept voor Banketbakkerij Veldkamp staat klaar, € 2.180</span></li>
+            <li><time>08:11</time><span><b>Facturen</b> Herinnering naar Pension Wadzicht verstuurd</span></li>
+            <li><time>08:15</time><span><b>CRM</b> Nieuwe aanvraag via de site toegevoegd en ingepland</span></li>
+          </ol>
+          <div class="pane__sum">
+            <span>Handwerk bespaard vandaag</span>
+            <strong><span data-count="164" data-format="hm">2 u 44 min</span></strong>
           </div>
         </div>
-        <ul class="week__rows">
-        <li class="week__row" style="--vak:5;--ged:3;--ged2:1.5;--ter:1.5">
-          <span class="week__day">Maandag</span>
-          <span class="week__bar" aria-hidden="true"><i class="v"></i><i class="g" data-b="3 u" data-a="1,5 u"></i><i class="t" data-a="+1,5 u"></i></span>
-          <span class="sr-only">3 uur gedoe, met systeem 1,5 uur.</span>
-        </li>
-        <li class="week__row" style="--vak:5.5;--ged:2.5;--ged2:1;--ter:1.5">
-          <span class="week__day">Dinsdag</span>
-          <span class="week__bar" aria-hidden="true"><i class="v"></i><i class="g" data-b="2,5 u" data-a="1 u"></i><i class="t" data-a="+1,5 u"></i></span>
-          <span class="sr-only">2,5 uur gedoe, met systeem 1 uur.</span>
-        </li>
-        <li class="week__row" style="--vak:5;--ged:3;--ged2:1.5;--ter:1.5">
-          <span class="week__day">Woensdag</span>
-          <span class="week__bar" aria-hidden="true"><i class="v"></i><i class="g" data-b="3 u" data-a="1,5 u"></i><i class="t" data-a="+1,5 u"></i></span>
-          <span class="sr-only">3 uur gedoe, met systeem 1,5 uur.</span>
-        </li>
-        <li class="week__row" style="--vak:6;--ged:2;--ged2:1;--ter:1">
-          <span class="week__day">Donderdag</span>
-          <span class="week__bar" aria-hidden="true"><i class="v"></i><i class="g" data-b="2 u" data-a="1 u"></i><i class="t" data-a="+1 u"></i></span>
-          <span class="sr-only">2 uur gedoe, met systeem 1 uur.</span>
-        </li>
-        <li class="week__row" style="--vak:5.5;--ged:2.5;--ged2:1;--ter:1.5">
-          <span class="week__day">Vrijdag</span>
-          <span class="week__bar" aria-hidden="true"><i class="v"></i><i class="g" data-b="2,5 u" data-a="1 u"></i><i class="t" data-a="+1,5 u"></i></span>
-          <span class="sr-only">2,5 uur gedoe, met systeem 1 uur.</span>
-        </li>
-        </ul>
-        <div class="week__legend" aria-hidden="true">
-          <span><i class="lg lg--v"></i>Je vak</span>
-          <span><i class="lg lg--g"></i>Gedoe</span>
-          <span class="week__lg-t"><i class="lg lg--t"></i>Extra tijd voor je vak</span>
-        </div>
-        <p class="week__sum">
-          <span class="week__sum-nu"><b>13 uur</b> per week gaat op aan gedoe.</span>
-          <span class="week__sum-na"><b>7 uur terug</b> per week voor je vak, of voor vrije tijd.</span>
-        </p>
-        <figcaption class="week__note">Voorbeeld met verzonnen cijfers. In de tijdscan meten we jouw week.</figcaption>
-      </figure>
+      </div>
+      <div class="pane pane--float" role="group" aria-label="Wacht op jouw akkoord">
+        <p class="pane__label">Wacht op jou</p>
+        <p class="pane__ask"><b>Offerte OF-2611</b> Pension Wadzicht, € 3.974</p>
+        <p class="pane__why">Boven € 2.500, dus eerst jouw akkoord.</p>
+        <p class="pane__btns"><span class="mini-btn mini-btn--go">Akkoord</span><span class="mini-btn">Bekijk</span></p>
+      </div>
     </div>
   </section>
 

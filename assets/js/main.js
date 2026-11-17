@@ -76,22 +76,6 @@
     r.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(r); } });
   });
 
-  /* ---------- hero: werkweek nu / met systeem ---------- */
-  const week = $('.week');
-  if (week) {
-    let touched = false;
-    const setWeek = st => {
-      week.dataset.state = st;
-      $$('.week__tog button', week).forEach(b => b.setAttribute('aria-pressed', String(b.dataset.set === st)));
-    };
-    $$('.week__tog button', week).forEach(b => b.addEventListener('click', () => { touched = true; setWeek(b.dataset.set); }));
-    if ('IntersectionObserver' in window && !reduce.matches) {
-      new IntersectionObserver((es, o) => {
-        if (es[0].isIntersecting) { o.disconnect(); window.setTimeout(() => { if (!touched) setWeek('na'); }, 1200); }
-      }, { threshold: 0.6 }).observe(week);
-    }
-  }
-
   /* ---------- rekenhulp ---------- */
   const uren = $('#c-uren'), tarief = $('#c-tarief');
   const calc = () => {
