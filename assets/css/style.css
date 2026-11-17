@@ -735,3 +735,7 @@ input[type=range]{width:100%; margin-top:.8rem; accent-color:var(--navy); height
 .chart{display:flex; flex-direction:column}
 .chart .bars{flex:1; min-height:9.5rem; height:auto}
 @media (max-width:980px){ .hero2__visual{padding-bottom:9rem} .pane--float{right:1rem} }
+/* zwevende kaart in de flow: overlapt precies de lege onderrand van het paneel */
+.hero2__visual{padding-bottom:0; display:flex; flex-direction:column}
+.pane--float{position:relative; left:auto; right:auto; bottom:auto; margin:-2.5rem 0 0 -2.5rem; align-self:flex-start}
+@media (max-width:980px){ .pane--float{margin:-2.5rem 1rem 0 auto; align-self:flex-end} }

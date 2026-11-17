@@ -99,9 +99,17 @@
   if (uren && tarief) { uren.addEventListener('input', calc); tarief.addEventListener('input', calc); calc(); }
 
   /* ---------- sticky knop op mobiel: weg zodra het formulier in beeld is ---------- */
-  const dock = $('.dock'), start = $('#start');
+  // Verborgen zolang de hero-knoppen of het formulier zelf in beeld zijn.
+  const dock = $('.dock'), start = $('#start'), heroCta = $('.hero__actions');
   if (dock && start && 'IntersectionObserver' in window) {
-    new IntersectionObserver(([e]) => dock.classList.toggle('is-hidden', e.isIntersecting), { threshold: 0.05 }).observe(start);
+    const seen = new Set();
+    dock.classList.add('is-hidden');
+    const dio = new IntersectionObserver(entries => {
+      entries.forEach(e => e.isIntersecting ? seen.add(e.target) : seen.delete(e.target));
+      dock.classList.toggle('is-hidden', seen.size > 0);
+    }, { threshold: 0.05 });
+    dio.observe(start);
+    if (heroCta) dio.observe(heroCta);
   }
 
   /* ---------- beweging ---------- */
